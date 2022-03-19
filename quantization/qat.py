@@ -272,8 +272,8 @@ def main():
     cpu_device = torch.device("cpu:0")
 
     model_dir = "saved_models"
-    model_filename = "resnet18_cifar10.pt"
-    quantized_model_filename = "resnet18_quantized_cifar10.pt"
+    model_filename = "resnet18_qat_cifar10.pt"
+    quantized_model_filename = "resnet18_qat_quantized_cifar10.pt"
     model_filepath = os.path.join(model_dir, model_filename)
     quantized_model_filepath = os.path.join(model_dir, quantized_model_filename)
 
