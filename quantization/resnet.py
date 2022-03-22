@@ -4,7 +4,7 @@
 import torch
 from torch import Tensor
 import torch.nn as nn
-from torchvision.models.utils import load_state_dict_from_url
+from torch.hub import load_state_dict_from_url
 from typing import Type, Any, Callable, Union, List, Optional
 
 
@@ -399,3 +399,75 @@ def wide_resnet101_2(pretrained: bool = False, progress: bool = True, **kwargs: 
     kwargs['width_per_group'] = 64 * 2
     return _resnet('wide_resnet101_2', Bottleneck, [3, 4, 23, 3],
                    pretrained, progress, **kwargs)
+
+class SNet(nn.Module):
+    def __init__(self, num_classes, pretrained):
+        super(SNet, self).__init__()
+        self.conv1 = nn.Conv2d(3, 6, 3)
+        self.pool1 = nn.MaxPool2d(2, 2)
+        self.conv2 = nn.Conv2d(6, 12, 3)
+        self.pool2 = nn.MaxPool2d(2, 2)
+        self.fc1 = nn.Linear(12 * 6 * 6, num_classes)
+        self.relu1 = nn.ReLU(inplace=True)
+        self.relu2 = nn.ReLU(inplace=True)
+
+    def forward(self, x):
+        x = self.pool1(self.relu1(self.conv1(x)))
+        x = self.pool2(self.relu2(self.conv2(x)))
+        x = torch.flatten(x, 1)
+        x = self.fc1(x)
+        return x
+
+def snet(num_classes, pretrained):
+    return SNet(num_classes, pretrained)
+
+class CNet(nn.Module):
+    def __init__(self, num_classes, pretrained):
+        super(CNet, self).__init__()
+        self.conv1 = nn.Conv2d(3, 6, 3)
+        self.pool1 = nn.MaxPool2d(2, 2)
+        self.conv3 = nn.Conv2d(6, 6, 3, padding = 1)
+        self.conv4 = nn.Conv2d(6, 6, 3, padding = 1)
+        self.conv5 = nn.Conv2d(6, 6, 3, padding = 1)
+        self.conv6 = nn.Conv2d(6, 6, 3, padding = 1)
+        self.conv7 = nn.Conv2d(6, 6, 3, padding = 1)
+        self.conv8 = nn.Conv2d(6, 6, 3, padding = 1)
+        self.conv9 = nn.Conv2d(6, 6, 3, padding = 1)
+        self.conv10 = nn.Conv2d(6, 6, 3, padding = 1)
+        self.conv11 = nn.Conv2d(6, 6, 3, padding = 1)
+        self.conv12 = nn.Conv2d(6, 6, 3, padding = 1)
+        self.conv2 = nn.Conv2d(6, 12, 3)
+        self.pool2 = nn.MaxPool2d(2, 2)
+        self.fc1 = nn.Linear(12 * 6 * 6, num_classes)
+        self.relu1 = nn.ReLU(inplace=True)
+        self.relu2 = nn.ReLU(inplace=True)
+        self.relu3 = nn.ReLU(inplace=True)
+        self.relu4 = nn.ReLU(inplace=True)
+        self.relu5 = nn.ReLU(inplace=True)
+        self.relu6 = nn.ReLU(inplace=True)
+        self.relu7 = nn.ReLU(inplace=True)
+        self.relu8 = nn.ReLU(inplace=True)
+        self.relu9 = nn.ReLU(inplace=True)
+        self.relu10 = nn.ReLU(inplace=True)
+        self.relu11 = nn.ReLU(inplace=True)
+        self.relu12 = nn.ReLU(inplace=True)
+
+    def forward(self, x):
+        x = self.pool1(self.relu1(self.conv1(x)))
+        x = self.relu3(self.conv3(x))
+        x = self.relu4(self.conv4(x))
+        x = self.relu5(self.conv5(x))
+        x = self.relu6(self.conv6(x))
+        x = self.relu7(self.conv7(x))
+        x = self.relu8(self.conv8(x))
+        x = self.relu9(self.conv9(x))
+        x = self.relu10(self.conv10(x))
+        x = self.relu11(self.conv11(x))
+        x = self.relu12(self.conv12(x))
+        x = self.pool2(self.relu2(self.conv2(x)))
+        x = torch.flatten(x, 1)
+        x = self.fc1(x)
+        return x
+    
+def cnet(num_classes, pretrained):
+    return CNet(num_classes, pretrained)

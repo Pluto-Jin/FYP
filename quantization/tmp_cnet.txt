@@ -1,0 +1,143 @@
+Files already downloaded and verified
+Files already downloaded and verified
+Epoch: 00 Train Loss: 2.305 Train Acc: 0.100 Eval Loss: 2.306 Eval Acc: 0.100
+Epoch: 01 Train Loss: 2.305 Train Acc: 0.098 Eval Loss: 2.304 Eval Acc: 0.100
+CNet(
+  (conv1): Conv2d(3, 6, kernel_size=(3, 3), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv3): Conv2d(6, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv4): Conv2d(6, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv5): Conv2d(6, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv6): Conv2d(6, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv7): Conv2d(6, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv8): Conv2d(6, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv9): Conv2d(6, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv10): Conv2d(6, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv11): Conv2d(6, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv12): Conv2d(6, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv2): Conv2d(6, 12, kernel_size=(3, 3), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (fc1): Linear(in_features=432, out_features=10, bias=True)
+  (relu1): ReLU(inplace=True)
+  (relu2): ReLU(inplace=True)
+  (relu3): ReLU(inplace=True)
+  (relu4): ReLU(inplace=True)
+  (relu5): ReLU(inplace=True)
+  (relu6): ReLU(inplace=True)
+  (relu7): ReLU(inplace=True)
+  (relu8): ReLU(inplace=True)
+  (relu9): ReLU(inplace=True)
+  (relu10): ReLU(inplace=True)
+  (relu11): ReLU(inplace=True)
+  (relu12): ReLU(inplace=True)
+)
+CNet(
+  (conv1): ConvReLU2d(
+    (0): Conv2d(3, 6, kernel_size=(3, 3), stride=(1, 1))
+    (1): ReLU(inplace=True)
+  )
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv3): ConvReLU2d(
+    (0): Conv2d(6, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU(inplace=True)
+  )
+  (conv4): ConvReLU2d(
+    (0): Conv2d(6, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU(inplace=True)
+  )
+  (conv5): ConvReLU2d(
+    (0): Conv2d(6, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU(inplace=True)
+  )
+  (conv6): ConvReLU2d(
+    (0): Conv2d(6, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU(inplace=True)
+  )
+  (conv7): ConvReLU2d(
+    (0): Conv2d(6, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU(inplace=True)
+  )
+  (conv8): ConvReLU2d(
+    (0): Conv2d(6, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU(inplace=True)
+  )
+  (conv9): ConvReLU2d(
+    (0): Conv2d(6, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU(inplace=True)
+  )
+  (conv10): ConvReLU2d(
+    (0): Conv2d(6, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU(inplace=True)
+  )
+  (conv11): ConvReLU2d(
+    (0): Conv2d(6, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU(inplace=True)
+  )
+  (conv12): ConvReLU2d(
+    (0): Conv2d(6, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU(inplace=True)
+  )
+  (conv2): ConvReLU2d(
+    (0): Conv2d(6, 12, kernel_size=(3, 3), stride=(1, 1))
+    (1): ReLU(inplace=True)
+  )
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (fc1): Linear(in_features=432, out_features=10, bias=True)
+  (relu1): Identity()
+  (relu2): Identity()
+  (relu3): Identity()
+  (relu4): Identity()
+  (relu5): Identity()
+  (relu6): Identity()
+  (relu7): Identity()
+  (relu8): Identity()
+  (relu9): Identity()
+  (relu10): Identity()
+  (relu11): Identity()
+  (relu12): Identity()
+)
+QConfig(activation=functools.partial(<class 'torch.ao.quantization.observer.HistogramObserver'>, reduce_range=True){}, weight=functools.partial(<class 'torch.ao.quantization.observer.PerChannelMinMaxObserver'>, dtype=torch.qint8, qscheme=torch.per_channel_symmetric){})
+/usr/local/lib/python3.7/dist-packages/torch/ao/quantization/observer.py:174: UserWarning: Please use quant_min and quant_max to specify the range for observers.                     reduce_range will be deprecated in a future release of PyTorch.
+  reduce_range will be deprecated in a future release of PyTorch."
+QuantizedResNet18(
+  (quant): Quantize(scale=tensor([0.0374]), zero_point=tensor([57]), dtype=torch.quint8)
+  (dequant): DeQuantize()
+  (model_fp32): CNet(
+    (conv1): QuantizedConvReLU2d(3, 6, kernel_size=(3, 3), stride=(1, 1), scale=0.023980312049388885, zero_point=0)
+    (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv3): QuantizedConvReLU2d(6, 6, kernel_size=(3, 3), stride=(1, 1), scale=0.014534291811287403, zero_point=0, padding=(1, 1))
+    (conv4): QuantizedConvReLU2d(6, 6, kernel_size=(3, 3), stride=(1, 1), scale=0.005121253430843353, zero_point=0, padding=(1, 1))
+    (conv5): QuantizedConvReLU2d(6, 6, kernel_size=(3, 3), stride=(1, 1), scale=0.001975731458514929, zero_point=0, padding=(1, 1))
+    (conv6): QuantizedConvReLU2d(6, 6, kernel_size=(3, 3), stride=(1, 1), scale=0.001509038731455803, zero_point=0, padding=(1, 1))
+    (conv7): QuantizedConvReLU2d(6, 6, kernel_size=(3, 3), stride=(1, 1), scale=0.0012110114330425858, zero_point=0, padding=(1, 1))
+    (conv8): QuantizedConvReLU2d(6, 6, kernel_size=(3, 3), stride=(1, 1), scale=0.0006593766738660634, zero_point=0, padding=(1, 1))
+    (conv9): QuantizedConvReLU2d(6, 6, kernel_size=(3, 3), stride=(1, 1), scale=0.000975605973508209, zero_point=0, padding=(1, 1))
+    (conv10): QuantizedConvReLU2d(6, 6, kernel_size=(3, 3), stride=(1, 1), scale=0.000852283788844943, zero_point=0, padding=(1, 1))
+    (conv11): QuantizedConvReLU2d(6, 6, kernel_size=(3, 3), stride=(1, 1), scale=0.0010259681148454547, zero_point=0, padding=(1, 1))
+    (conv12): QuantizedConvReLU2d(6, 6, kernel_size=(3, 3), stride=(1, 1), scale=1.1920928955078125e-07, zero_point=0, padding=(1, 1))
+    (conv2): QuantizedConvReLU2d(6, 12, kernel_size=(3, 3), stride=(1, 1), scale=1.1920928955078125e-07, zero_point=0)
+    (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (fc1): QuantizedLinear(in_features=432, out_features=10, scale=0.0016933012520894408, zero_point=44, qscheme=torch.per_channel_affine)
+    (relu1): Identity()
+    (relu2): Identity()
+    (relu3): Identity()
+    (relu4): Identity()
+    (relu5): Identity()
+    (relu6): Identity()
+    (relu7): Identity()
+    (relu8): Identity()
+    (relu9): Identity()
+    (relu10): Identity()
+    (relu11): Identity()
+    (relu12): Identity()
+  )
+)
+/usr/local/lib/python3.7/dist-packages/torch/ao/quantization/observer.py:886: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  src_bin_begin // dst_bin_width, 0, self.dst_nbins - 1
+/usr/local/lib/python3.7/dist-packages/torch/ao/quantization/observer.py:891: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  src_bin_end // dst_bin_width, 0, self.dst_nbins - 1
+FP32 evaluation accuracy: 0.1000
+INT8 evaluation accuracy: 0.1000
+FP32 CPU Inference Latency: 1.00 ms / sample
+INT8 CPU Inference Latency: 2.12 ms / sample
+INT8 JIT CPU Inference Latency: 0.90 ms / sample

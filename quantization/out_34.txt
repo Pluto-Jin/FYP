@@ -1,0 +1,899 @@
+Files already downloaded and verified
+Files already downloaded and verified
+Epoch: 00 Train Loss: 2.689 Train Acc: 0.174 Eval Loss: 1.983 Eval Acc: 0.240
+Epoch: 01 Train Loss: 1.840 Train Acc: 0.299 Eval Loss: 1.721 Eval Acc: 0.355
+Epoch: 02 Train Loss: 1.638 Train Acc: 0.388 Eval Loss: 1.607 Eval Acc: 0.384
+Epoch: 03 Train Loss: 1.517 Train Acc: 0.435 Eval Loss: 1.461 Eval Acc: 0.458
+Epoch: 04 Train Loss: 1.407 Train Acc: 0.487 Eval Loss: 1.331 Eval Acc: 0.521
+Epoch: 05 Train Loss: 1.307 Train Acc: 0.527 Eval Loss: 1.288 Eval Acc: 0.555
+Epoch: 06 Train Loss: 1.259 Train Acc: 0.549 Eval Loss: 1.257 Eval Acc: 0.559
+Epoch: 07 Train Loss: 1.158 Train Acc: 0.587 Eval Loss: 1.207 Eval Acc: 0.579
+Epoch: 08 Train Loss: 1.073 Train Acc: 0.621 Eval Loss: 1.127 Eval Acc: 0.609
+Epoch: 09 Train Loss: 1.032 Train Acc: 0.634 Eval Loss: 1.073 Eval Acc: 0.639
+Epoch: 10 Train Loss: 0.967 Train Acc: 0.658 Eval Loss: 0.906 Eval Acc: 0.684
+Epoch: 11 Train Loss: 0.929 Train Acc: 0.675 Eval Loss: 0.854 Eval Acc: 0.706
+Epoch: 12 Train Loss: 0.884 Train Acc: 0.690 Eval Loss: 0.906 Eval Acc: 0.691
+Epoch: 13 Train Loss: 0.845 Train Acc: 0.705 Eval Loss: 1.057 Eval Acc: 0.702
+Epoch: 14 Train Loss: 0.845 Train Acc: 0.706 Eval Loss: 0.850 Eval Acc: 0.705
+Epoch: 15 Train Loss: 0.805 Train Acc: 0.722 Eval Loss: 0.817 Eval Acc: 0.719
+Epoch: 16 Train Loss: 0.758 Train Acc: 0.738 Eval Loss: 0.723 Eval Acc: 0.753
+Epoch: 17 Train Loss: 0.729 Train Acc: 0.746 Eval Loss: 0.736 Eval Acc: 0.750
+Epoch: 18 Train Loss: 0.701 Train Acc: 0.757 Eval Loss: 0.733 Eval Acc: 0.753
+Epoch: 19 Train Loss: 0.686 Train Acc: 0.762 Eval Loss: 0.769 Eval Acc: 0.734
+Epoch: 20 Train Loss: 0.663 Train Acc: 0.768 Eval Loss: 0.671 Eval Acc: 0.768
+Epoch: 21 Train Loss: 0.652 Train Acc: 0.775 Eval Loss: 0.699 Eval Acc: 0.757
+Epoch: 22 Train Loss: 0.637 Train Acc: 0.780 Eval Loss: 0.677 Eval Acc: 0.772
+Epoch: 23 Train Loss: 0.629 Train Acc: 0.782 Eval Loss: 0.716 Eval Acc: 0.757
+Epoch: 24 Train Loss: 0.614 Train Acc: 0.787 Eval Loss: 0.658 Eval Acc: 0.778
+Epoch: 25 Train Loss: 0.603 Train Acc: 0.792 Eval Loss: 0.675 Eval Acc: 0.775
+Epoch: 26 Train Loss: 0.590 Train Acc: 0.795 Eval Loss: 0.637 Eval Acc: 0.782
+Epoch: 27 Train Loss: 0.582 Train Acc: 0.799 Eval Loss: 0.640 Eval Acc: 0.785
+Epoch: 28 Train Loss: 0.573 Train Acc: 0.801 Eval Loss: 0.642 Eval Acc: 0.781
+Epoch: 29 Train Loss: 0.564 Train Acc: 0.806 Eval Loss: 0.598 Eval Acc: 0.798
+Epoch: 30 Train Loss: 0.553 Train Acc: 0.808 Eval Loss: 0.657 Eval Acc: 0.778
+Epoch: 31 Train Loss: 0.542 Train Acc: 0.812 Eval Loss: 0.620 Eval Acc: 0.790
+Epoch: 32 Train Loss: 0.542 Train Acc: 0.814 Eval Loss: 0.643 Eval Acc: 0.787
+Epoch: 33 Train Loss: 0.531 Train Acc: 0.815 Eval Loss: 0.660 Eval Acc: 0.779
+Epoch: 34 Train Loss: 0.521 Train Acc: 0.819 Eval Loss: 0.614 Eval Acc: 0.795
+Epoch: 35 Train Loss: 0.508 Train Acc: 0.823 Eval Loss: 0.588 Eval Acc: 0.800
+Epoch: 36 Train Loss: 0.506 Train Acc: 0.827 Eval Loss: 0.638 Eval Acc: 0.781
+Epoch: 37 Train Loss: 0.506 Train Acc: 0.824 Eval Loss: 0.631 Eval Acc: 0.787
+Epoch: 38 Train Loss: 0.498 Train Acc: 0.826 Eval Loss: 0.646 Eval Acc: 0.788
+Epoch: 39 Train Loss: 0.498 Train Acc: 0.826 Eval Loss: 0.599 Eval Acc: 0.799
+Epoch: 40 Train Loss: 0.481 Train Acc: 0.834 Eval Loss: 0.601 Eval Acc: 0.801
+Epoch: 41 Train Loss: 0.478 Train Acc: 0.835 Eval Loss: 0.623 Eval Acc: 0.795
+Epoch: 42 Train Loss: 0.468 Train Acc: 0.837 Eval Loss: 0.605 Eval Acc: 0.795
+Epoch: 43 Train Loss: 0.470 Train Acc: 0.839 Eval Loss: 0.596 Eval Acc: 0.801
+Epoch: 44 Train Loss: 0.460 Train Acc: 0.840 Eval Loss: 0.576 Eval Acc: 0.808
+Epoch: 45 Train Loss: 0.457 Train Acc: 0.843 Eval Loss: 0.591 Eval Acc: 0.806
+Epoch: 46 Train Loss: 0.455 Train Acc: 0.842 Eval Loss: 0.590 Eval Acc: 0.803
+Epoch: 47 Train Loss: 0.452 Train Acc: 0.843 Eval Loss: 0.594 Eval Acc: 0.797
+Epoch: 48 Train Loss: 0.444 Train Acc: 0.845 Eval Loss: 0.569 Eval Acc: 0.813
+Epoch: 49 Train Loss: 0.443 Train Acc: 0.846 Eval Loss: 0.547 Eval Acc: 0.815
+Epoch: 50 Train Loss: 0.436 Train Acc: 0.849 Eval Loss: 0.596 Eval Acc: 0.807
+Epoch: 51 Train Loss: 0.439 Train Acc: 0.844 Eval Loss: 0.570 Eval Acc: 0.813
+Epoch: 52 Train Loss: 0.429 Train Acc: 0.853 Eval Loss: 0.593 Eval Acc: 0.805
+Epoch: 53 Train Loss: 0.422 Train Acc: 0.852 Eval Loss: 0.588 Eval Acc: 0.811
+Epoch: 54 Train Loss: 0.428 Train Acc: 0.850 Eval Loss: 0.551 Eval Acc: 0.818
+Epoch: 55 Train Loss: 0.420 Train Acc: 0.853 Eval Loss: 0.561 Eval Acc: 0.811
+Epoch: 56 Train Loss: 0.415 Train Acc: 0.855 Eval Loss: 0.647 Eval Acc: 0.786
+Epoch: 57 Train Loss: 0.413 Train Acc: 0.857 Eval Loss: 0.632 Eval Acc: 0.794
+Epoch: 58 Train Loss: 0.407 Train Acc: 0.859 Eval Loss: 0.559 Eval Acc: 0.817
+Epoch: 59 Train Loss: 0.409 Train Acc: 0.856 Eval Loss: 0.577 Eval Acc: 0.812
+Epoch: 60 Train Loss: 0.402 Train Acc: 0.861 Eval Loss: 0.608 Eval Acc: 0.799
+Epoch: 61 Train Loss: 0.409 Train Acc: 0.858 Eval Loss: 0.575 Eval Acc: 0.810
+Epoch: 62 Train Loss: 0.400 Train Acc: 0.860 Eval Loss: 0.584 Eval Acc: 0.813
+Epoch: 63 Train Loss: 0.399 Train Acc: 0.860 Eval Loss: 0.551 Eval Acc: 0.823
+Epoch: 64 Train Loss: 0.391 Train Acc: 0.864 Eval Loss: 0.556 Eval Acc: 0.820
+Epoch: 65 Train Loss: 0.394 Train Acc: 0.864 Eval Loss: 0.538 Eval Acc: 0.826
+Epoch: 66 Train Loss: 0.388 Train Acc: 0.866 Eval Loss: 0.617 Eval Acc: 0.805
+Epoch: 67 Train Loss: 0.378 Train Acc: 0.868 Eval Loss: 0.557 Eval Acc: 0.819
+Epoch: 68 Train Loss: 0.390 Train Acc: 0.864 Eval Loss: 0.525 Eval Acc: 0.826
+Epoch: 69 Train Loss: 0.383 Train Acc: 0.866 Eval Loss: 0.552 Eval Acc: 0.819
+Epoch: 70 Train Loss: 0.380 Train Acc: 0.867 Eval Loss: 0.560 Eval Acc: 0.815
+Epoch: 71 Train Loss: 0.381 Train Acc: 0.868 Eval Loss: 0.556 Eval Acc: 0.823
+Epoch: 72 Train Loss: 0.377 Train Acc: 0.870 Eval Loss: 0.550 Eval Acc: 0.823
+Epoch: 73 Train Loss: 0.367 Train Acc: 0.872 Eval Loss: 0.547 Eval Acc: 0.819
+Epoch: 74 Train Loss: 0.373 Train Acc: 0.871 Eval Loss: 0.527 Eval Acc: 0.827
+Epoch: 75 Train Loss: 0.369 Train Acc: 0.870 Eval Loss: 0.557 Eval Acc: 0.817
+Epoch: 76 Train Loss: 0.371 Train Acc: 0.870 Eval Loss: 0.560 Eval Acc: 0.816
+Epoch: 77 Train Loss: 0.369 Train Acc: 0.870 Eval Loss: 0.591 Eval Acc: 0.813
+Epoch: 78 Train Loss: 0.359 Train Acc: 0.875 Eval Loss: 0.559 Eval Acc: 0.825
+Epoch: 79 Train Loss: 0.363 Train Acc: 0.873 Eval Loss: 0.519 Eval Acc: 0.831
+Epoch: 80 Train Loss: 0.352 Train Acc: 0.878 Eval Loss: 0.569 Eval Acc: 0.817
+Epoch: 81 Train Loss: 0.361 Train Acc: 0.874 Eval Loss: 0.536 Eval Acc: 0.829
+Epoch: 82 Train Loss: 0.359 Train Acc: 0.876 Eval Loss: 0.565 Eval Acc: 0.821
+Epoch: 83 Train Loss: 0.354 Train Acc: 0.875 Eval Loss: 0.575 Eval Acc: 0.818
+Epoch: 84 Train Loss: 0.356 Train Acc: 0.877 Eval Loss: 0.562 Eval Acc: 0.824
+Epoch: 85 Train Loss: 0.350 Train Acc: 0.877 Eval Loss: 0.555 Eval Acc: 0.819
+Epoch: 86 Train Loss: 0.347 Train Acc: 0.878 Eval Loss: 0.651 Eval Acc: 0.804
+Epoch: 87 Train Loss: 0.351 Train Acc: 0.878 Eval Loss: 0.542 Eval Acc: 0.828
+Epoch: 88 Train Loss: 0.354 Train Acc: 0.875 Eval Loss: 0.524 Eval Acc: 0.835
+Epoch: 89 Train Loss: 0.342 Train Acc: 0.881 Eval Loss: 0.616 Eval Acc: 0.810
+Epoch: 90 Train Loss: 0.347 Train Acc: 0.880 Eval Loss: 0.552 Eval Acc: 0.824
+Epoch: 91 Train Loss: 0.342 Train Acc: 0.880 Eval Loss: 0.568 Eval Acc: 0.822
+Epoch: 92 Train Loss: 0.340 Train Acc: 0.882 Eval Loss: 0.529 Eval Acc: 0.824
+Epoch: 93 Train Loss: 0.336 Train Acc: 0.882 Eval Loss: 0.555 Eval Acc: 0.828
+Epoch: 94 Train Loss: 0.338 Train Acc: 0.882 Eval Loss: 0.537 Eval Acc: 0.827
+Epoch: 95 Train Loss: 0.337 Train Acc: 0.882 Eval Loss: 0.559 Eval Acc: 0.825
+Epoch: 96 Train Loss: 0.331 Train Acc: 0.884 Eval Loss: 0.527 Eval Acc: 0.831
+Epoch: 97 Train Loss: 0.334 Train Acc: 0.882 Eval Loss: 0.538 Eval Acc: 0.829
+Epoch: 98 Train Loss: 0.328 Train Acc: 0.885 Eval Loss: 0.575 Eval Acc: 0.818
+Epoch: 99 Train Loss: 0.336 Train Acc: 0.882 Eval Loss: 0.634 Eval Acc: 0.803
+Epoch: 100 Train Loss: 0.224 Train Acc: 0.922 Eval Loss: 0.451 Eval Acc: 0.862
+Epoch: 101 Train Loss: 0.173 Train Acc: 0.940 Eval Loss: 0.458 Eval Acc: 0.863
+Epoch: 102 Train Loss: 0.157 Train Acc: 0.946 Eval Loss: 0.458 Eval Acc: 0.864
+Epoch: 103 Train Loss: 0.147 Train Acc: 0.949 Eval Loss: 0.467 Eval Acc: 0.868
+Epoch: 104 Train Loss: 0.139 Train Acc: 0.951 Eval Loss: 0.467 Eval Acc: 0.869
+Epoch: 105 Train Loss: 0.131 Train Acc: 0.954 Eval Loss: 0.476 Eval Acc: 0.865
+Epoch: 106 Train Loss: 0.127 Train Acc: 0.956 Eval Loss: 0.475 Eval Acc: 0.866
+Epoch: 107 Train Loss: 0.118 Train Acc: 0.959 Eval Loss: 0.481 Eval Acc: 0.866
+Epoch: 108 Train Loss: 0.114 Train Acc: 0.960 Eval Loss: 0.489 Eval Acc: 0.866
+Epoch: 109 Train Loss: 0.109 Train Acc: 0.962 Eval Loss: 0.489 Eval Acc: 0.867
+Epoch: 110 Train Loss: 0.107 Train Acc: 0.963 Eval Loss: 0.486 Eval Acc: 0.867
+Epoch: 111 Train Loss: 0.103 Train Acc: 0.964 Eval Loss: 0.494 Eval Acc: 0.866
+Epoch: 112 Train Loss: 0.098 Train Acc: 0.966 Eval Loss: 0.502 Eval Acc: 0.868
+Epoch: 113 Train Loss: 0.096 Train Acc: 0.967 Eval Loss: 0.512 Eval Acc: 0.864
+Epoch: 114 Train Loss: 0.090 Train Acc: 0.968 Eval Loss: 0.518 Eval Acc: 0.867
+Epoch: 115 Train Loss: 0.088 Train Acc: 0.969 Eval Loss: 0.519 Eval Acc: 0.866
+Epoch: 116 Train Loss: 0.084 Train Acc: 0.971 Eval Loss: 0.536 Eval Acc: 0.864
+Epoch: 117 Train Loss: 0.078 Train Acc: 0.972 Eval Loss: 0.550 Eval Acc: 0.864
+Epoch: 118 Train Loss: 0.082 Train Acc: 0.971 Eval Loss: 0.547 Eval Acc: 0.866
+Epoch: 119 Train Loss: 0.078 Train Acc: 0.973 Eval Loss: 0.552 Eval Acc: 0.866
+Epoch: 120 Train Loss: 0.079 Train Acc: 0.973 Eval Loss: 0.535 Eval Acc: 0.870
+Epoch: 121 Train Loss: 0.074 Train Acc: 0.974 Eval Loss: 0.555 Eval Acc: 0.867
+Epoch: 122 Train Loss: 0.073 Train Acc: 0.975 Eval Loss: 0.552 Eval Acc: 0.868
+Epoch: 123 Train Loss: 0.070 Train Acc: 0.976 Eval Loss: 0.553 Eval Acc: 0.863
+Epoch: 124 Train Loss: 0.068 Train Acc: 0.976 Eval Loss: 0.552 Eval Acc: 0.868
+Epoch: 125 Train Loss: 0.066 Train Acc: 0.977 Eval Loss: 0.564 Eval Acc: 0.867
+Epoch: 126 Train Loss: 0.066 Train Acc: 0.977 Eval Loss: 0.563 Eval Acc: 0.865
+Epoch: 127 Train Loss: 0.065 Train Acc: 0.977 Eval Loss: 0.567 Eval Acc: 0.867
+Epoch: 128 Train Loss: 0.064 Train Acc: 0.978 Eval Loss: 0.565 Eval Acc: 0.868
+Epoch: 129 Train Loss: 0.061 Train Acc: 0.978 Eval Loss: 0.579 Eval Acc: 0.866
+Epoch: 130 Train Loss: 0.059 Train Acc: 0.979 Eval Loss: 0.586 Eval Acc: 0.867
+Epoch: 131 Train Loss: 0.059 Train Acc: 0.979 Eval Loss: 0.594 Eval Acc: 0.866
+Epoch: 132 Train Loss: 0.058 Train Acc: 0.980 Eval Loss: 0.580 Eval Acc: 0.868
+Epoch: 133 Train Loss: 0.055 Train Acc: 0.981 Eval Loss: 0.586 Eval Acc: 0.863
+Epoch: 134 Train Loss: 0.056 Train Acc: 0.980 Eval Loss: 0.591 Eval Acc: 0.862
+Epoch: 135 Train Loss: 0.056 Train Acc: 0.981 Eval Loss: 0.577 Eval Acc: 0.867
+Epoch: 136 Train Loss: 0.054 Train Acc: 0.981 Eval Loss: 0.606 Eval Acc: 0.864
+Epoch: 137 Train Loss: 0.054 Train Acc: 0.981 Eval Loss: 0.597 Eval Acc: 0.865
+Epoch: 138 Train Loss: 0.053 Train Acc: 0.982 Eval Loss: 0.608 Eval Acc: 0.865
+Epoch: 139 Train Loss: 0.049 Train Acc: 0.983 Eval Loss: 0.625 Eval Acc: 0.865
+Epoch: 140 Train Loss: 0.052 Train Acc: 0.982 Eval Loss: 0.610 Eval Acc: 0.868
+Epoch: 141 Train Loss: 0.053 Train Acc: 0.981 Eval Loss: 0.605 Eval Acc: 0.868
+Epoch: 142 Train Loss: 0.052 Train Acc: 0.982 Eval Loss: 0.608 Eval Acc: 0.867
+Epoch: 143 Train Loss: 0.050 Train Acc: 0.982 Eval Loss: 0.596 Eval Acc: 0.866
+Epoch: 144 Train Loss: 0.048 Train Acc: 0.983 Eval Loss: 0.604 Eval Acc: 0.867
+Epoch: 145 Train Loss: 0.048 Train Acc: 0.984 Eval Loss: 0.618 Eval Acc: 0.866
+Epoch: 146 Train Loss: 0.051 Train Acc: 0.982 Eval Loss: 0.613 Eval Acc: 0.863
+Epoch: 147 Train Loss: 0.046 Train Acc: 0.985 Eval Loss: 0.623 Eval Acc: 0.864
+Epoch: 148 Train Loss: 0.052 Train Acc: 0.982 Eval Loss: 0.628 Eval Acc: 0.860
+Epoch: 149 Train Loss: 0.047 Train Acc: 0.984 Eval Loss: 0.623 Eval Acc: 0.863
+Epoch: 150 Train Loss: 0.038 Train Acc: 0.986 Eval Loss: 0.607 Eval Acc: 0.865
+Epoch: 151 Train Loss: 0.032 Train Acc: 0.989 Eval Loss: 0.602 Eval Acc: 0.868
+Epoch: 152 Train Loss: 0.032 Train Acc: 0.989 Eval Loss: 0.600 Eval Acc: 0.868
+Epoch: 153 Train Loss: 0.029 Train Acc: 0.990 Eval Loss: 0.601 Eval Acc: 0.868
+Epoch: 154 Train Loss: 0.028 Train Acc: 0.990 Eval Loss: 0.608 Eval Acc: 0.869
+Epoch: 155 Train Loss: 0.028 Train Acc: 0.991 Eval Loss: 0.606 Eval Acc: 0.869
+Epoch: 156 Train Loss: 0.027 Train Acc: 0.991 Eval Loss: 0.605 Eval Acc: 0.868
+Epoch: 157 Train Loss: 0.027 Train Acc: 0.991 Eval Loss: 0.602 Eval Acc: 0.870
+Epoch: 158 Train Loss: 0.028 Train Acc: 0.991 Eval Loss: 0.605 Eval Acc: 0.869
+Epoch: 159 Train Loss: 0.025 Train Acc: 0.992 Eval Loss: 0.610 Eval Acc: 0.870
+Epoch: 160 Train Loss: 0.025 Train Acc: 0.992 Eval Loss: 0.610 Eval Acc: 0.868
+Epoch: 161 Train Loss: 0.025 Train Acc: 0.992 Eval Loss: 0.614 Eval Acc: 0.869
+Epoch: 162 Train Loss: 0.025 Train Acc: 0.992 Eval Loss: 0.619 Eval Acc: 0.870
+Epoch: 163 Train Loss: 0.026 Train Acc: 0.992 Eval Loss: 0.615 Eval Acc: 0.870
+Epoch: 164 Train Loss: 0.024 Train Acc: 0.993 Eval Loss: 0.614 Eval Acc: 0.870
+Epoch: 165 Train Loss: 0.023 Train Acc: 0.993 Eval Loss: 0.614 Eval Acc: 0.870
+Epoch: 166 Train Loss: 0.022 Train Acc: 0.993 Eval Loss: 0.617 Eval Acc: 0.871
+Epoch: 167 Train Loss: 0.023 Train Acc: 0.993 Eval Loss: 0.622 Eval Acc: 0.870
+Epoch: 168 Train Loss: 0.023 Train Acc: 0.993 Eval Loss: 0.622 Eval Acc: 0.870
+Epoch: 169 Train Loss: 0.023 Train Acc: 0.992 Eval Loss: 0.625 Eval Acc: 0.870
+Epoch: 170 Train Loss: 0.023 Train Acc: 0.992 Eval Loss: 0.626 Eval Acc: 0.870
+Epoch: 171 Train Loss: 0.022 Train Acc: 0.993 Eval Loss: 0.629 Eval Acc: 0.871
+Epoch: 172 Train Loss: 0.021 Train Acc: 0.993 Eval Loss: 0.628 Eval Acc: 0.870
+Epoch: 173 Train Loss: 0.024 Train Acc: 0.992 Eval Loss: 0.631 Eval Acc: 0.871
+Epoch: 174 Train Loss: 0.021 Train Acc: 0.993 Eval Loss: 0.628 Eval Acc: 0.868
+Epoch: 175 Train Loss: 0.021 Train Acc: 0.993 Eval Loss: 0.634 Eval Acc: 0.868
+Epoch: 176 Train Loss: 0.021 Train Acc: 0.993 Eval Loss: 0.632 Eval Acc: 0.871
+Epoch: 177 Train Loss: 0.020 Train Acc: 0.993 Eval Loss: 0.627 Eval Acc: 0.871
+Epoch: 178 Train Loss: 0.021 Train Acc: 0.993 Eval Loss: 0.634 Eval Acc: 0.871
+Epoch: 179 Train Loss: 0.020 Train Acc: 0.993 Eval Loss: 0.634 Eval Acc: 0.870
+Epoch: 180 Train Loss: 0.020 Train Acc: 0.994 Eval Loss: 0.637 Eval Acc: 0.870
+Epoch: 181 Train Loss: 0.020 Train Acc: 0.993 Eval Loss: 0.638 Eval Acc: 0.869
+Epoch: 182 Train Loss: 0.021 Train Acc: 0.993 Eval Loss: 0.640 Eval Acc: 0.870
+Epoch: 183 Train Loss: 0.020 Train Acc: 0.993 Eval Loss: 0.640 Eval Acc: 0.869
+Epoch: 184 Train Loss: 0.020 Train Acc: 0.993 Eval Loss: 0.641 Eval Acc: 0.869
+Epoch: 185 Train Loss: 0.020 Train Acc: 0.994 Eval Loss: 0.642 Eval Acc: 0.869
+Epoch: 186 Train Loss: 0.020 Train Acc: 0.994 Eval Loss: 0.641 Eval Acc: 0.869
+Epoch: 187 Train Loss: 0.018 Train Acc: 0.994 Eval Loss: 0.646 Eval Acc: 0.870
+Epoch: 188 Train Loss: 0.018 Train Acc: 0.994 Eval Loss: 0.646 Eval Acc: 0.869
+Epoch: 189 Train Loss: 0.018 Train Acc: 0.994 Eval Loss: 0.646 Eval Acc: 0.870
+Epoch: 190 Train Loss: 0.019 Train Acc: 0.994 Eval Loss: 0.650 Eval Acc: 0.871
+Epoch: 191 Train Loss: 0.017 Train Acc: 0.994 Eval Loss: 0.645 Eval Acc: 0.871
+Epoch: 192 Train Loss: 0.019 Train Acc: 0.994 Eval Loss: 0.652 Eval Acc: 0.871
+Epoch: 193 Train Loss: 0.017 Train Acc: 0.995 Eval Loss: 0.653 Eval Acc: 0.872
+Epoch: 194 Train Loss: 0.018 Train Acc: 0.994 Eval Loss: 0.652 Eval Acc: 0.872
+Epoch: 195 Train Loss: 0.018 Train Acc: 0.994 Eval Loss: 0.653 Eval Acc: 0.871
+Epoch: 196 Train Loss: 0.017 Train Acc: 0.995 Eval Loss: 0.654 Eval Acc: 0.871
+Epoch: 197 Train Loss: 0.017 Train Acc: 0.994 Eval Loss: 0.652 Eval Acc: 0.871
+Epoch: 198 Train Loss: 0.018 Train Acc: 0.994 Eval Loss: 0.655 Eval Acc: 0.870
+Epoch: 199 Train Loss: 0.018 Train Acc: 0.994 Eval Loss: 0.654 Eval Acc: 0.871
+ResNet(
+  (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (layer1): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (2): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+  )
+  (layer2): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (2): BasicBlock(
+      (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (3): BasicBlock(
+      (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+  )
+  (layer3): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (2): BasicBlock(
+      (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (3): BasicBlock(
+      (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (4): BasicBlock(
+      (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (5): BasicBlock(
+      (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+  )
+  (layer4): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (2): BasicBlock(
+      (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+  (fc): Linear(in_features=512, out_features=10, bias=True)
+)
+ResNet(
+  (conv1): ConvReLU2d(
+    (0): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3))
+    (1): ReLU(inplace=True)
+  )
+  (bn1): Identity()
+  (relu): Identity()
+  (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (layer1): Sequential(
+    (0): BasicBlock(
+      (conv1): ConvReLU2d(
+        (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): ReLU(inplace=True)
+      )
+      (bn1): Identity()
+      (relu1): Identity()
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (bn2): Identity()
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (1): BasicBlock(
+      (conv1): ConvReLU2d(
+        (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): ReLU(inplace=True)
+      )
+      (bn1): Identity()
+      (relu1): Identity()
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (bn2): Identity()
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (2): BasicBlock(
+      (conv1): ConvReLU2d(
+        (0): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): ReLU(inplace=True)
+      )
+      (bn1): Identity()
+      (relu1): Identity()
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (bn2): Identity()
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+  )
+  (layer2): Sequential(
+    (0): BasicBlock(
+      (conv1): ConvReLU2d(
+        (0): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+        (1): ReLU(inplace=True)
+      )
+      (bn1): Identity()
+      (relu1): Identity()
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (bn2): Identity()
+      (downsample): Sequential(
+        (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2))
+        (1): Identity()
+      )
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (1): BasicBlock(
+      (conv1): ConvReLU2d(
+        (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): ReLU(inplace=True)
+      )
+      (bn1): Identity()
+      (relu1): Identity()
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (bn2): Identity()
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (2): BasicBlock(
+      (conv1): ConvReLU2d(
+        (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): ReLU(inplace=True)
+      )
+      (bn1): Identity()
+      (relu1): Identity()
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (bn2): Identity()
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (3): BasicBlock(
+      (conv1): ConvReLU2d(
+        (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): ReLU(inplace=True)
+      )
+      (bn1): Identity()
+      (relu1): Identity()
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (bn2): Identity()
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+  )
+  (layer3): Sequential(
+    (0): BasicBlock(
+      (conv1): ConvReLU2d(
+        (0): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+        (1): ReLU(inplace=True)
+      )
+      (bn1): Identity()
+      (relu1): Identity()
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (bn2): Identity()
+      (downsample): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2))
+        (1): Identity()
+      )
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (1): BasicBlock(
+      (conv1): ConvReLU2d(
+        (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): ReLU(inplace=True)
+      )
+      (bn1): Identity()
+      (relu1): Identity()
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (bn2): Identity()
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (2): BasicBlock(
+      (conv1): ConvReLU2d(
+        (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): ReLU(inplace=True)
+      )
+      (bn1): Identity()
+      (relu1): Identity()
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (bn2): Identity()
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (3): BasicBlock(
+      (conv1): ConvReLU2d(
+        (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): ReLU(inplace=True)
+      )
+      (bn1): Identity()
+      (relu1): Identity()
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (bn2): Identity()
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (4): BasicBlock(
+      (conv1): ConvReLU2d(
+        (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): ReLU(inplace=True)
+      )
+      (bn1): Identity()
+      (relu1): Identity()
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (bn2): Identity()
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (5): BasicBlock(
+      (conv1): ConvReLU2d(
+        (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): ReLU(inplace=True)
+      )
+      (bn1): Identity()
+      (relu1): Identity()
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (bn2): Identity()
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+  )
+  (layer4): Sequential(
+    (0): BasicBlock(
+      (conv1): ConvReLU2d(
+        (0): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+        (1): ReLU(inplace=True)
+      )
+      (bn1): Identity()
+      (relu1): Identity()
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (bn2): Identity()
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2))
+        (1): Identity()
+      )
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (1): BasicBlock(
+      (conv1): ConvReLU2d(
+        (0): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): ReLU(inplace=True)
+      )
+      (bn1): Identity()
+      (relu1): Identity()
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (bn2): Identity()
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (2): BasicBlock(
+      (conv1): ConvReLU2d(
+        (0): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): ReLU(inplace=True)
+      )
+      (bn1): Identity()
+      (relu1): Identity()
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (bn2): Identity()
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+  (fc): Linear(in_features=512, out_features=10, bias=True)
+)
+QConfig(activation=functools.partial(<class 'torch.ao.quantization.observer.HistogramObserver'>, reduce_range=True){}, weight=functools.partial(<class 'torch.ao.quantization.observer.PerChannelMinMaxObserver'>, dtype=torch.qint8, qscheme=torch.per_channel_symmetric){})
+/usr/local/lib/python3.7/dist-packages/torch/ao/quantization/observer.py:174: UserWarning: Please use quant_min and quant_max to specify the range for observers.                     reduce_range will be deprecated in a future release of PyTorch.
+  reduce_range will be deprecated in a future release of PyTorch."
+QuantizedResNet18(
+  (quant): Quantize(scale=tensor([0.0374]), zero_point=tensor([57]), dtype=torch.quint8)
+  (dequant): DeQuantize()
+  (model_fp32): ResNet(
+    (conv1): QuantizedConvReLU2d(3, 64, kernel_size=(7, 7), stride=(2, 2), scale=0.08172325044870377, zero_point=0, padding=(3, 3))
+    (bn1): Identity()
+    (relu): Identity()
+    (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+    (layer1): Sequential(
+      (0): BasicBlock(
+        (conv1): QuantizedConvReLU2d(64, 64, kernel_size=(3, 3), stride=(1, 1), scale=0.03353513777256012, zero_point=0, padding=(1, 1))
+        (bn1): Identity()
+        (relu1): Identity()
+        (conv2): QuantizedConv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), scale=0.08667196333408356, zero_point=84, padding=(1, 1))
+        (bn2): Identity()
+        (skip_add): QFunctional(
+          scale=0.12048861384391785, zero_point=52
+          (activation_post_process): Identity()
+        )
+        (relu2): ReLU(inplace=True)
+      )
+      (1): BasicBlock(
+        (conv1): QuantizedConvReLU2d(64, 64, kernel_size=(3, 3), stride=(1, 1), scale=0.02150389552116394, zero_point=0, padding=(1, 1))
+        (bn1): Identity()
+        (relu1): Identity()
+        (conv2): QuantizedConv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), scale=0.06024835258722305, zero_point=72, padding=(1, 1))
+        (bn2): Identity()
+        (skip_add): QFunctional(
+          scale=0.09839332848787308, zero_point=44
+          (activation_post_process): Identity()
+        )
+        (relu2): ReLU(inplace=True)
+      )
+      (2): BasicBlock(
+        (conv1): QuantizedConvReLU2d(64, 64, kernel_size=(3, 3), stride=(1, 1), scale=0.024658450856804848, zero_point=0, padding=(1, 1))
+        (bn1): Identity()
+        (relu1): Identity()
+        (conv2): QuantizedConv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), scale=0.07245137542486191, zero_point=55, padding=(1, 1))
+        (bn2): Identity()
+        (skip_add): QFunctional(
+          scale=0.09282410144805908, zero_point=40
+          (activation_post_process): Identity()
+        )
+        (relu2): ReLU(inplace=True)
+      )
+    )
+    (layer2): Sequential(
+      (0): BasicBlock(
+        (conv1): QuantizedConvReLU2d(64, 128, kernel_size=(3, 3), stride=(2, 2), scale=0.025798970833420753, zero_point=0, padding=(1, 1))
+        (bn1): Identity()
+        (relu1): Identity()
+        (conv2): QuantizedConv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), scale=0.06283637881278992, zero_point=61, padding=(1, 1))
+        (bn2): Identity()
+        (downsample): Sequential(
+          (0): QuantizedConv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), scale=0.05249235779047012, zero_point=68)
+          (1): Identity()
+        )
+        (skip_add): QFunctional(
+          scale=0.07912328094244003, zero_point=65
+          (activation_post_process): Identity()
+        )
+        (relu2): ReLU(inplace=True)
+      )
+      (1): BasicBlock(
+        (conv1): QuantizedConvReLU2d(128, 128, kernel_size=(3, 3), stride=(1, 1), scale=0.020233668386936188, zero_point=0, padding=(1, 1))
+        (bn1): Identity()
+        (relu1): Identity()
+        (conv2): QuantizedConv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), scale=0.04721628874540329, zero_point=65, padding=(1, 1))
+        (bn2): Identity()
+        (skip_add): QFunctional(
+          scale=0.07260997593402863, zero_point=46
+          (activation_post_process): Identity()
+        )
+        (relu2): ReLU(inplace=True)
+      )
+      (2): BasicBlock(
+        (conv1): QuantizedConvReLU2d(128, 128, kernel_size=(3, 3), stride=(1, 1), scale=0.021040521562099457, zero_point=0, padding=(1, 1))
+        (bn1): Identity()
+        (relu1): Identity()
+        (conv2): QuantizedConv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), scale=0.050795093178749084, zero_point=65, padding=(1, 1))
+        (bn2): Identity()
+        (skip_add): QFunctional(
+          scale=0.08453842252492905, zero_point=41
+          (activation_post_process): Identity()
+        )
+        (relu2): ReLU(inplace=True)
+      )
+      (3): BasicBlock(
+        (conv1): QuantizedConvReLU2d(128, 128, kernel_size=(3, 3), stride=(1, 1), scale=0.016937412321567535, zero_point=0, padding=(1, 1))
+        (bn1): Identity()
+        (relu1): Identity()
+        (conv2): QuantizedConv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), scale=0.044632527977228165, zero_point=70, padding=(1, 1))
+        (bn2): Identity()
+        (skip_add): QFunctional(
+          scale=0.07895215600728989, zero_point=43
+          (activation_post_process): Identity()
+        )
+        (relu2): ReLU(inplace=True)
+      )
+    )
+    (layer3): Sequential(
+      (0): BasicBlock(
+        (conv1): QuantizedConvReLU2d(128, 256, kernel_size=(3, 3), stride=(2, 2), scale=0.021464170888066292, zero_point=0, padding=(1, 1))
+        (bn1): Identity()
+        (relu1): Identity()
+        (conv2): QuantizedConv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), scale=0.04930087924003601, zero_point=68, padding=(1, 1))
+        (bn2): Identity()
+        (downsample): Sequential(
+          (0): QuantizedConv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), scale=0.025915762409567833, zero_point=66)
+          (1): Identity()
+        )
+        (skip_add): QFunctional(
+          scale=0.04590310528874397, zero_point=69
+          (activation_post_process): Identity()
+        )
+        (relu2): ReLU(inplace=True)
+      )
+      (1): BasicBlock(
+        (conv1): QuantizedConvReLU2d(256, 256, kernel_size=(3, 3), stride=(1, 1), scale=0.002710120053961873, zero_point=0, padding=(1, 1))
+        (bn1): Identity()
+        (relu1): Identity()
+        (conv2): QuantizedConv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), scale=0.01248739194124937, zero_point=50, padding=(1, 1))
+        (bn2): Identity()
+        (skip_add): QFunctional(
+          scale=0.026379888877272606, zero_point=36
+          (activation_post_process): Identity()
+        )
+        (relu2): ReLU(inplace=True)
+      )
+      (2): BasicBlock(
+        (conv1): QuantizedConvReLU2d(256, 256, kernel_size=(3, 3), stride=(1, 1), scale=0.001956094289198518, zero_point=0, padding=(1, 1))
+        (bn1): Identity()
+        (relu1): Identity()
+        (conv2): QuantizedConv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), scale=0.007405442651361227, zero_point=42, padding=(1, 1))
+        (bn2): Identity()
+        (skip_add): QFunctional(
+          scale=0.02474631555378437, zero_point=14
+          (activation_post_process): Identity()
+        )
+        (relu2): ReLU(inplace=True)
+      )
+      (3): BasicBlock(
+        (conv1): QuantizedConvReLU2d(256, 256, kernel_size=(3, 3), stride=(1, 1), scale=0.0023362033534795046, zero_point=0, padding=(1, 1))
+        (bn1): Identity()
+        (relu1): Identity()
+        (conv2): QuantizedConv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), scale=0.01054665818810463, zero_point=71, padding=(1, 1))
+        (bn2): Identity()
+        (skip_add): QFunctional(
+          scale=0.030222740024328232, zero_point=29
+          (activation_post_process): Identity()
+        )
+        (relu2): ReLU(inplace=True)
+      )
+      (4): BasicBlock(
+        (conv1): QuantizedConvReLU2d(256, 256, kernel_size=(3, 3), stride=(1, 1), scale=0.002448208397254348, zero_point=0, padding=(1, 1))
+        (bn1): Identity()
+        (relu1): Identity()
+        (conv2): QuantizedConv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), scale=0.02103850059211254, zero_point=102, padding=(1, 1))
+        (bn2): Identity()
+        (skip_add): QFunctional(
+          scale=0.03286806866526604, zero_point=40
+          (activation_post_process): Identity()
+        )
+        (relu2): ReLU(inplace=True)
+      )
+      (5): BasicBlock(
+        (conv1): QuantizedConvReLU2d(256, 256, kernel_size=(3, 3), stride=(1, 1), scale=0.003194038523361087, zero_point=0, padding=(1, 1))
+        (bn1): Identity()
+        (relu1): Identity()
+        (conv2): QuantizedConv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), scale=0.031572919338941574, zero_point=98, padding=(1, 1))
+        (bn2): Identity()
+        (skip_add): QFunctional(
+          scale=0.03708725422620773, zero_point=42
+          (activation_post_process): Identity()
+        )
+        (relu2): ReLU(inplace=True)
+      )
+    )
+    (layer4): Sequential(
+      (0): BasicBlock(
+        (conv1): QuantizedConvReLU2d(256, 512, kernel_size=(3, 3), stride=(2, 2), scale=0.0037458203732967377, zero_point=0, padding=(1, 1))
+        (bn1): Identity()
+        (relu1): Identity()
+        (conv2): QuantizedConv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), scale=0.02330370806157589, zero_point=37, padding=(1, 1))
+        (bn2): Identity()
+        (downsample): Sequential(
+          (0): QuantizedConv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), scale=0.04113178700208664, zero_point=58)
+          (1): Identity()
+        )
+        (skip_add): QFunctional(
+          scale=0.04996249079704285, zero_point=45
+          (activation_post_process): Identity()
+        )
+        (relu2): ReLU(inplace=True)
+      )
+      (1): BasicBlock(
+        (conv1): QuantizedConvReLU2d(512, 512, kernel_size=(3, 3), stride=(1, 1), scale=0.0035470076836645603, zero_point=0, padding=(1, 1))
+        (bn1): Identity()
+        (relu1): Identity()
+        (conv2): QuantizedConv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), scale=0.026640890166163445, zero_point=74, padding=(1, 1))
+        (bn2): Identity()
+        (skip_add): QFunctional(
+          scale=0.034149155020713806, zero_point=29
+          (activation_post_process): Identity()
+        )
+        (relu2): ReLU(inplace=True)
+      )
+      (2): BasicBlock(
+        (conv1): QuantizedConvReLU2d(512, 512, kernel_size=(3, 3), stride=(1, 1), scale=0.0022990780416876078, zero_point=0, padding=(1, 1))
+        (bn1): Identity()
+        (relu1): Identity()
+        (conv2): QuantizedConv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), scale=0.006739877164363861, zero_point=75, padding=(1, 1))
+        (bn2): Identity()
+        (skip_add): QFunctional(
+          scale=0.030409185215830803, zero_point=17
+          (activation_post_process): Identity()
+        )
+        (relu2): ReLU(inplace=True)
+      )
+    )
+    (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+    (fc): QuantizedLinear(in_features=512, out_features=10, scale=0.23250843584537506, zero_point=44, qscheme=torch.per_channel_affine)
+  )
+)/usr/local/lib/python3.7/dist-packages/torch/ao/quantization/observer.py:886: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  src_bin_begin // dst_bin_width, 0, self.dst_nbins - 1
+/usr/local/lib/python3.7/dist-packages/torch/ao/quantization/observer.py:891: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  src_bin_end // dst_bin_width, 0, self.dst_nbins - 1
+FP32 evaluation accuracy: 0.8714
+INT8 evaluation accuracy: 0.8706
+FP32 CPU Inference Latency: 8.79 ms / sample
+FP32 CUDA Inference Latency: 7.81 ms / sample
+INT8 CPU Inference Latency: 6.66 ms / sample
+INT8 JIT CPU Inference Latency: 2.69 ms / sample
+    
+
