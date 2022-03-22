@@ -1,0 +1,56 @@
+Files already downloaded and verified
+Files already downloaded and verified
+SNet(
+  (conv1): Conv2d(3, 6, kernel_size=(3, 3), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv2): Conv2d(6, 12, kernel_size=(3, 3), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (fc1): Linear(in_features=432, out_features=10, bias=True)
+  (relu1): ReLU(inplace=True)
+  (relu2): ReLU(inplace=True)
+)
+SNet(
+  (conv1): Conv2d(3, 6, kernel_size=(3, 3), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv2): Conv2d(6, 12, kernel_size=(3, 3), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (fc1): Linear(in_features=432, out_features=10, bias=True)
+  (relu1): ReLU(inplace=True)
+  (relu2): ReLU(inplace=True)
+)
+QConfig(activation=functools.partial(<class 'torch.ao.quantization.observer.HistogramObserver'>, reduce_range=True){}, weight=functools.partial(<class 'torch.ao.quantization.observer.PerChannelMinMaxObserver'>, dtype=torch.qint8, qscheme=torch.per_channel_symmetric){})
+Training QAT Model...
+/usr/local/lib/python3.7/dist-packages/torch/ao/quantization/observer.py:174: UserWarning: Please use quant_min and quant_max to specify the range for observers.                     reduce_range will be deprecated in a future release of PyTorch.
+  reduce_range will be deprecated in a future release of PyTorch."
+Epoch: 000 Train Loss: 1.183 Train Acc: 0.587 Eval Loss: 1.086 Eval Acc: 0.6218
+Epoch: 001 Train Loss: 1.181 Train Acc: 0.586 Eval Loss: 1.093 Eval Acc: 0.6185
+Epoch: 002 Train Loss: 1.184 Train Acc: 0.586 Eval Loss: 1.083 Eval Acc: 0.6225
+Epoch: 003 Train Loss: 1.180 Train Acc: 0.587 Eval Loss: 1.097 Eval Acc: 0.6216
+Epoch: 004 Train Loss: 1.179 Train Acc: 0.586 Eval Loss: 1.088 Eval Acc: 0.6220
+Epoch: 005 Train Loss: 1.183 Train Acc: 0.587 Eval Loss: 1.086 Eval Acc: 0.6214
+Epoch: 006 Train Loss: 1.179 Train Acc: 0.585 Eval Loss: 1.090 Eval Acc: 0.6167
+Epoch: 007 Train Loss: 1.180 Train Acc: 0.587 Eval Loss: 1.083 Eval Acc: 0.6236
+Epoch: 008 Train Loss: 1.179 Train Acc: 0.586 Eval Loss: 1.088 Eval Acc: 0.6226
+Epoch: 009 Train Loss: 1.183 Train Acc: 0.586 Eval Loss: 1.084 Eval Acc: 0.6215
+QuantizedResNet18(
+  (quant): Quantize(scale=tensor([0.0374]), zero_point=tensor([57]), dtype=torch.quint8)
+  (dequant): DeQuantize()
+  (model_fp32): SNet(
+    (conv1): QuantizedConv2d(3, 6, kernel_size=(3, 3), stride=(1, 1), scale=0.256296306848526, zero_point=64)
+    (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv2): QuantizedConv2d(6, 12, kernel_size=(3, 3), stride=(1, 1), scale=0.3028205633163452, zero_point=96)
+    (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (fc1): QuantizedLinear(in_features=432, out_features=10, scale=0.19699792563915253, zero_point=57, qscheme=torch.per_channel_affine)
+    (relu1): ReLU(inplace=True)
+    (relu2): ReLU(inplace=True)
+  )
+)
+/usr/local/lib/python3.7/dist-packages/torch/ao/quantization/observer.py:886: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  src_bin_begin // dst_bin_width, 0, self.dst_nbins - 1
+/usr/local/lib/python3.7/dist-packages/torch/ao/quantization/observer.py:891: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  src_bin_end // dst_bin_width, 0, self.dst_nbins - 1
+FP32 evaluation accuracy: 0.6223
+INT8 evaluation accuracy: 0.6225
+FP32 CPU Inference Latency: 0.24 ms / sample
+INT8 CPU Inference Latency: 0.81 ms / sample
+INT8 JIT CPU Inference Latency: 0.26 ms / sample

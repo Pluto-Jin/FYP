@@ -142,7 +142,7 @@ def train_model(model, train_loader, test_loader, device, learning_rate=1e-1, nu
         # Set learning rate scheduler
         scheduler.step()
 
-        print("Epoch: {:03d} Train Loss: {:.3f} Train Acc: {:.3f} Eval Loss: {:.3f} Eval Acc: {:.3f}".format(epoch, train_loss, train_accuracy, eval_loss, eval_accuracy))
+        print("Epoch: {:03d} Train Loss: {:.3f} Train Acc: {:.3f} Eval Loss: {:.3f} Eval Acc: {:.4f}".format(epoch, train_loss, train_accuracy, eval_loss, eval_accuracy))
 
     return model
 

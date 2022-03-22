@@ -13,7 +13,7 @@ import copy
 import numpy as np
 import argparse
 
-from resnet import resnet18,resnet34,snet,cnet
+from resnet import resnet18,resnet34,snet
 
 def set_random_seeds(random_seed=0):
 
@@ -91,7 +91,7 @@ def train_model(model, train_loader, test_loader, device):
 
     # The training configurations were not carefully selected.
     learning_rate = 1e-1
-    num_epochs = 2
+    num_epochs = 200
 
     criterion = nn.CrossEntropyLoss()
 
@@ -148,12 +148,14 @@ def train_model(model, train_loader, test_loader, device):
 
     return model
 
-def calibrate_model(model, loader, device=torch.device("cpu:0")):
+def calibrate_model(model, loader, rate, device=torch.device("cpu:0")):
 
     model.to(device)
     model.eval()
 
     for inputs, labels in loader:
+        if random.random() > rate:
+            continue
         inputs = inputs.to(device)
         labels = labels.to(device)
         _ = model(inputs)
@@ -256,7 +258,7 @@ def create_model(model_arch, num_classes=10):
     # This is required for fast GEMM integer matrix multiplication.
     # model = torchvision.models.resnet18(pretrained=False)
     # model = resnet18(num_classes=num_classes, pretrained=False)
-    model_dic = {'res18':resnet18, 'res34':resnet34, 'snet':snet, 'cnet':cnet}
+    model_dic = {'res18':resnet18, 'res34':resnet34, 'snet':snet}
     model = model_dic[model_arch](num_classes=num_classes, pretrained=False)
 
     # We would use the pretrained ResNet18 as a feature extractor.
@@ -273,6 +275,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--arch', type=str, required=True,default='res18')
     parser.add_argument('--train', type=str, required=True,default='True')
+    parser.add_argument('--calib', type=float, default=1.0)
     args = parser.parse_args()
 
     random_seed = 0
@@ -311,7 +314,7 @@ def main():
     # Otherwise the quantization will not work correctly.
     fused_model.eval()
 
-    if model_arch not in ['snet', 'cnet']:
+    if model_arch not in ['snet']:
         print("Fused!")
         # Fuse the model in place rather manually.
         fused_model = torch.quantization.fuse_modules(fused_model, [["conv1", "bn1", "relu"]], inplace=True)
@@ -322,9 +325,9 @@ def main():
                     for sub_block_name, sub_block in basic_block.named_children():
                         if sub_block_name == "downsample":
                             torch.quantization.fuse_modules(sub_block, [["0", "1"]], inplace=True)
-    else:
-        for i in range(1,13):
-            fused_model = torch.quantization.fuse_modules(fused_model, [["conv"+str(i), "relu"+str(i)]], inplace=True)
+#     else:
+#         for i in range(1,5):
+#             fused_model = torch.quantization.fuse_modules(fused_model, [["conv"+str(i), "relu"+str(i)]], inplace=True)
 
     # Print FP32 model.
     print(model)
@@ -355,7 +358,7 @@ def main():
     torch.quantization.prepare(quantized_model, inplace=True)
 
     # Use training data for calibration.
-    calibrate_model(model=quantized_model, loader=train_loader, device=cpu_device)
+    calibrate_model(model=quantized_model, loader=train_loader, rate=args.calib, device=cpu_device)
 
     quantized_model = torch.quantization.convert(quantized_model, inplace=True)
 
@@ -367,6 +370,9 @@ def main():
 
     # Print quantized model.
     print(quantized_model)
+
+    save_model(model=quantized_model, model_dir=model_dir, model_filename=quantized_model_filename)
+    return
 
     # Save quantized model.
     save_torchscript_model(model=quantized_model, model_dir=model_dir, model_filename=quantized_model_filename)

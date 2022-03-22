@@ -537,16 +537,16 @@ QConfig(activation=functools.partial(<class 'torch.ao.quantization.observer.Hist
 Training QAT Model...
 /usr/local/lib/python3.7/dist-packages/torch/ao/quantization/observer.py:174: UserWarning: Please use quant_min and quant_max to specify the range for observers.                     reduce_range will be deprecated in a future release of PyTorch.
   reduce_range will be deprecated in a future release of PyTorch."
-Epoch: 000 Train Loss: 0.017 Train Acc: 0.995 Eval Loss: 0.657 Eval Acc: 0.871
-Epoch: 001 Train Loss: 0.017 Train Acc: 0.995 Eval Loss: 0.655 Eval Acc: 0.870
-Epoch: 002 Train Loss: 0.016 Train Acc: 0.995 Eval Loss: 0.660 Eval Acc: 0.870
-Epoch: 003 Train Loss: 0.017 Train Acc: 0.994 Eval Loss: 0.652 Eval Acc: 0.872
-Epoch: 004 Train Loss: 0.018 Train Acc: 0.994 Eval Loss: 0.660 Eval Acc: 0.871
-Epoch: 005 Train Loss: 0.017 Train Acc: 0.994 Eval Loss: 0.658 Eval Acc: 0.872
-Epoch: 006 Train Loss: 0.016 Train Acc: 0.995 Eval Loss: 0.660 Eval Acc: 0.871
-Epoch: 007 Train Loss: 0.016 Train Acc: 0.995 Eval Loss: 0.659 Eval Acc: 0.871
-Epoch: 008 Train Loss: 0.016 Train Acc: 0.995 Eval Loss: 0.664 Eval Acc: 0.872
-Epoch: 009 Train Loss: 0.016 Train Acc: 0.995 Eval Loss: 0.661 Eval Acc: 0.870
+Epoch: 000 Train Loss: 0.017 Train Acc: 0.995 Eval Loss: 0.657 Eval Acc: 0.8707
+Epoch: 001 Train Loss: 0.017 Train Acc: 0.995 Eval Loss: 0.655 Eval Acc: 0.8699
+Epoch: 002 Train Loss: 0.016 Train Acc: 0.995 Eval Loss: 0.660 Eval Acc: 0.8703
+Epoch: 003 Train Loss: 0.017 Train Acc: 0.994 Eval Loss: 0.652 Eval Acc: 0.8717
+Epoch: 004 Train Loss: 0.018 Train Acc: 0.994 Eval Loss: 0.660 Eval Acc: 0.8714
+Epoch: 005 Train Loss: 0.017 Train Acc: 0.994 Eval Loss: 0.658 Eval Acc: 0.8720
+Epoch: 006 Train Loss: 0.016 Train Acc: 0.995 Eval Loss: 0.660 Eval Acc: 0.8714
+Epoch: 007 Train Loss: 0.016 Train Acc: 0.995 Eval Loss: 0.659 Eval Acc: 0.8710
+Epoch: 008 Train Loss: 0.016 Train Acc: 0.995 Eval Loss: 0.664 Eval Acc: 0.8723
+Epoch: 009 Train Loss: 0.016 Train Acc: 0.995 Eval Loss: 0.661 Eval Acc: 0.8705
 QuantizedResNet18(
   (quant): Quantize(scale=tensor([0.0374]), zero_point=tensor([57]), dtype=torch.quint8)
   (dequant): DeQuantize()
@@ -560,7 +560,7 @@ QuantizedResNet18(
         (conv1): QuantizedConvReLU2d(64, 64, kernel_size=(3, 3), stride=(1, 1), scale=0.0322946161031723, zero_point=0, padding=(1, 1))
         (bn1): Identity()
         (relu1): Identity()
-        (conv2): QuantizedConv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), scale=0.07902205735445023, zero_point=84, padding=(1, 1))
+        (conv2): QuantizedConv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), scale=0.0791010782122612, zero_point=84, padding=(1, 1))
         (bn2): Identity()
         (skip_add): QFunctional(
           scale=0.11510547995567322, zero_point=50
@@ -572,7 +572,7 @@ QuantizedResNet18(
         (conv1): QuantizedConvReLU2d(64, 64, kernel_size=(3, 3), stride=(1, 1), scale=0.027906514704227448, zero_point=0, padding=(1, 1))
         (bn1): Identity()
         (relu1): Identity()
-        (conv2): QuantizedConv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), scale=0.0588017962872982, zero_point=69, padding=(1, 1))
+        (conv2): QuantizedConv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), scale=0.05874590575695038, zero_point=69, padding=(1, 1))
         (bn2): Identity()
         (skip_add): QFunctional(
           scale=0.09676922857761383, zero_point=42
@@ -584,7 +584,7 @@ QuantizedResNet18(
         (conv1): QuantizedConvReLU2d(64, 64, kernel_size=(3, 3), stride=(1, 1), scale=0.026048336178064346, zero_point=0, padding=(1, 1))
         (bn1): Identity()
         (relu1): Identity()
-        (conv2): QuantizedConv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), scale=0.06389369815587997, zero_point=67, padding=(1, 1))
+        (conv2): QuantizedConv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), scale=0.06953364610671997, zero_point=62, padding=(1, 1))
         (bn2): Identity()
         (skip_add): QFunctional(
           scale=0.09243101626634598, zero_point=45
@@ -614,7 +614,7 @@ QuantizedResNet18(
         (conv1): QuantizedConvReLU2d(128, 128, kernel_size=(3, 3), stride=(1, 1), scale=0.020924542099237442, zero_point=0, padding=(1, 1))
         (bn1): Identity()
         (relu1): Identity()
-        (conv2): QuantizedConv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), scale=0.05612149462103844, zero_point=66, padding=(1, 1))
+        (conv2): QuantizedConv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), scale=0.05606928467750549, zero_point=66, padding=(1, 1))
         (bn2): Identity()
         (skip_add): QFunctional(
           scale=0.07714413106441498, zero_point=49
@@ -695,7 +695,7 @@ QuantizedResNet18(
         (conv2): QuantizedConv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), scale=0.009413017891347408, zero_point=58, padding=(1, 1))
         (bn2): Identity()
         (skip_add): QFunctional(
-          scale=0.028149612247943878, zero_point=30
+          scale=0.027548858895897865, zero_point=31
           (activation_post_process): Identity()
         )
         (relu2): ReLU(inplace=True)
@@ -776,7 +776,7 @@ QuantizedResNet18(
 /usr/local/lib/python3.7/dist-packages/torch/ao/quantization/observer.py:891: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
   src_bin_end // dst_bin_width, 0, self.dst_nbins - 1
 FP32 evaluation accuracy: 0.8709
-INT8 evaluation accuracy: 0.8695
-FP32 CPU Inference Latency: 7.36 ms / sample
-INT8 CPU Inference Latency: 5.68 ms / sample
-INT8 JIT CPU Inference Latency: 2.27 ms / sample
+INT8 evaluation accuracy: 0.8700
+FP32 CPU Inference Latency: 8.93 ms / sample
+INT8 CPU Inference Latency: 5.41 ms / sample
+INT8 JIT CPU Inference Latency: 2.34 ms / sample

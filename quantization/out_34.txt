@@ -892,8 +892,7 @@ QuantizedResNet18(
 FP32 evaluation accuracy: 0.8714
 INT8 evaluation accuracy: 0.8706
 FP32 CPU Inference Latency: 8.79 ms / sample
-FP32 CUDA Inference Latency: 7.81 ms / sample
-INT8 CPU Inference Latency: 6.66 ms / sample
+INT8 CPU Inference Latency: 5.66 ms / sample
 INT8 JIT CPU Inference Latency: 2.69 ms / sample
     
 
