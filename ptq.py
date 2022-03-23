@@ -371,8 +371,8 @@ def main():
     # Print quantized model.
     print(quantized_model)
 
-    save_model(model=quantized_model, model_dir=model_dir, model_filename=quantized_model_filename)
-    return
+    # save_model(model=quantized_model, model_dir=model_dir, model_filename=quantized_model_filename)
+    # return
 
     # Save quantized model.
     save_torchscript_model(model=quantized_model, model_dir=model_dir, model_filename=quantized_model_filename)
