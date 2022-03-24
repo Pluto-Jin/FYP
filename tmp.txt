@@ -1,0 +1,223 @@
+SNet(
+  (conv1): Conv2d(3, 6, kernel_size=(3, 3), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv2): Conv2d(6, 12, kernel_size=(3, 3), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (fc1): Linear(in_features=432, out_features=10, bias=True)
+  (relu1): ReLU(inplace=True)
+  (relu2): ReLU(inplace=True)
+)
+SNet(
+  (conv1): Conv2d(3, 6, kernel_size=(3, 3), stride=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv2): Conv2d(6, 12, kernel_size=(3, 3), stride=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (fc1): Linear(in_features=432, out_features=10, bias=True)
+  (relu1): ReLU(inplace=True)
+  (relu2): ReLU(inplace=True)
+)
+Files already downloaded and verified
+Files already downloaded and verified
+/usr/local/lib/python3.7/dist-packages/torch/nn/functional.py:2748: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  "reduction: 'mean' divides the total loss by both the batch size and the support size."
+Epoch: 00 Train Loss: 0.950 Train KD_Loss: 0.143 Train Acc: 0.356 Eval Loss: 1.464 Eval Acc: 0.468
+Epoch: 01 Train Loss: 0.842 Train KD_Loss: 0.110 Train Acc: 0.431 Eval Loss: 1.446 Eval Acc: 0.473
+Epoch: 02 Train Loss: 0.817 Train KD_Loss: 0.106 Train Acc: 0.448 Eval Loss: 1.475 Eval Acc: 0.473
+Epoch: 03 Train Loss: 0.814 Train KD_Loss: 0.105 Train Acc: 0.451 Eval Loss: 1.423 Eval Acc: 0.481
+Epoch: 04 Train Loss: 0.810 Train KD_Loss: 0.105 Train Acc: 0.453 Eval Loss: 1.380 Eval Acc: 0.493
+Epoch: 05 Train Loss: 0.793 Train KD_Loss: 0.102 Train Acc: 0.469 Eval Loss: 1.361 Eval Acc: 0.512
+Epoch: 06 Train Loss: 0.778 Train KD_Loss: 0.099 Train Acc: 0.476 Eval Loss: 1.405 Eval Acc: 0.485
+Epoch: 07 Train Loss: 0.781 Train KD_Loss: 0.100 Train Acc: 0.478 Eval Loss: 1.362 Eval Acc: 0.514
+Epoch: 08 Train Loss: 0.774 Train KD_Loss: 0.100 Train Acc: 0.484 Eval Loss: 1.428 Eval Acc: 0.488
+Epoch: 09 Train Loss: 0.771 Train KD_Loss: 0.099 Train Acc: 0.487 Eval Loss: 1.338 Eval Acc: 0.529
+Epoch: 10 Train Loss: 0.771 Train KD_Loss: 0.100 Train Acc: 0.487 Eval Loss: 1.410 Eval Acc: 0.485
+Epoch: 11 Train Loss: 0.766 Train KD_Loss: 0.099 Train Acc: 0.488 Eval Loss: 1.342 Eval Acc: 0.523
+Epoch: 12 Train Loss: 0.761 Train KD_Loss: 0.097 Train Acc: 0.491 Eval Loss: 1.299 Eval Acc: 0.537
+Epoch: 13 Train Loss: 0.761 Train KD_Loss: 0.097 Train Acc: 0.493 Eval Loss: 1.284 Eval Acc: 0.537
+Epoch: 14 Train Loss: 0.759 Train KD_Loss: 0.098 Train Acc: 0.490 Eval Loss: 1.278 Eval Acc: 0.540
+Epoch: 15 Train Loss: 0.759 Train KD_Loss: 0.097 Train Acc: 0.494 Eval Loss: 1.367 Eval Acc: 0.516
+Epoch: 16 Train Loss: 0.763 Train KD_Loss: 0.099 Train Acc: 0.490 Eval Loss: 1.322 Eval Acc: 0.524
+Epoch: 17 Train Loss: 0.774 Train KD_Loss: 0.102 Train Acc: 0.483 Eval Loss: 1.391 Eval Acc: 0.500
+Epoch: 18 Train Loss: 0.754 Train KD_Loss: 0.097 Train Acc: 0.490 Eval Loss: 1.289 Eval Acc: 0.541
+Epoch: 19 Train Loss: 0.755 Train KD_Loss: 0.097 Train Acc: 0.495 Eval Loss: 1.304 Eval Acc: 0.525
+Epoch: 20 Train Loss: 0.761 Train KD_Loss: 0.098 Train Acc: 0.492 Eval Loss: 1.329 Eval Acc: 0.518
+Epoch: 21 Train Loss: 0.756 Train KD_Loss: 0.098 Train Acc: 0.496 Eval Loss: 1.414 Eval Acc: 0.502
+Epoch: 22 Train Loss: 0.761 Train KD_Loss: 0.098 Train Acc: 0.490 Eval Loss: 1.272 Eval Acc: 0.553
+Epoch: 23 Train Loss: 0.757 Train KD_Loss: 0.098 Train Acc: 0.496 Eval Loss: 1.298 Eval Acc: 0.543
+Epoch: 24 Train Loss: 0.757 Train KD_Loss: 0.097 Train Acc: 0.493 Eval Loss: 1.347 Eval Acc: 0.523
+Epoch: 25 Train Loss: 0.762 Train KD_Loss: 0.098 Train Acc: 0.490 Eval Loss: 1.307 Eval Acc: 0.532
+Epoch: 26 Train Loss: 0.759 Train KD_Loss: 0.097 Train Acc: 0.491 Eval Loss: 1.289 Eval Acc: 0.539
+Epoch: 27 Train Loss: 0.757 Train KD_Loss: 0.096 Train Acc: 0.491 Eval Loss: 1.276 Eval Acc: 0.545
+Epoch: 28 Train Loss: 0.749 Train KD_Loss: 0.095 Train Acc: 0.499 Eval Loss: 1.312 Eval Acc: 0.530
+Epoch: 29 Train Loss: 0.750 Train KD_Loss: 0.095 Train Acc: 0.496 Eval Loss: 1.342 Eval Acc: 0.529
+Epoch: 30 Train Loss: 0.751 Train KD_Loss: 0.095 Train Acc: 0.496 Eval Loss: 1.244 Eval Acc: 0.558
+Epoch: 31 Train Loss: 0.752 Train KD_Loss: 0.094 Train Acc: 0.496 Eval Loss: 1.283 Eval Acc: 0.554
+Epoch: 32 Train Loss: 0.753 Train KD_Loss: 0.096 Train Acc: 0.497 Eval Loss: 1.275 Eval Acc: 0.547
+Epoch: 33 Train Loss: 0.755 Train KD_Loss: 0.096 Train Acc: 0.492 Eval Loss: 1.301 Eval Acc: 0.539
+Epoch: 34 Train Loss: 0.753 Train KD_Loss: 0.095 Train Acc: 0.493 Eval Loss: 1.321 Eval Acc: 0.530
+Epoch: 35 Train Loss: 0.748 Train KD_Loss: 0.095 Train Acc: 0.499 Eval Loss: 1.302 Eval Acc: 0.542
+Epoch: 36 Train Loss: 0.749 Train KD_Loss: 0.095 Train Acc: 0.499 Eval Loss: 1.315 Eval Acc: 0.541
+Epoch: 37 Train Loss: 0.755 Train KD_Loss: 0.096 Train Acc: 0.495 Eval Loss: 1.252 Eval Acc: 0.558
+Epoch: 38 Train Loss: 0.756 Train KD_Loss: 0.097 Train Acc: 0.496 Eval Loss: 1.332 Eval Acc: 0.526
+Epoch: 39 Train Loss: 0.755 Train KD_Loss: 0.095 Train Acc: 0.493 Eval Loss: 1.315 Eval Acc: 0.536
+Epoch: 40 Train Loss: 0.752 Train KD_Loss: 0.095 Train Acc: 0.495 Eval Loss: 1.263 Eval Acc: 0.554
+Epoch: 41 Train Loss: 0.741 Train KD_Loss: 0.092 Train Acc: 0.502 Eval Loss: 1.247 Eval Acc: 0.560
+Epoch: 42 Train Loss: 0.753 Train KD_Loss: 0.096 Train Acc: 0.497 Eval Loss: 1.252 Eval Acc: 0.551
+Epoch: 43 Train Loss: 0.750 Train KD_Loss: 0.095 Train Acc: 0.500 Eval Loss: 1.345 Eval Acc: 0.513
+Epoch: 44 Train Loss: 0.747 Train KD_Loss: 0.094 Train Acc: 0.497 Eval Loss: 1.357 Eval Acc: 0.519
+Epoch: 45 Train Loss: 0.755 Train KD_Loss: 0.097 Train Acc: 0.497 Eval Loss: 1.223 Eval Acc: 0.572
+Epoch: 46 Train Loss: 0.755 Train KD_Loss: 0.096 Train Acc: 0.496 Eval Loss: 1.258 Eval Acc: 0.549
+Epoch: 47 Train Loss: 0.745 Train KD_Loss: 0.094 Train Acc: 0.499 Eval Loss: 1.329 Eval Acc: 0.527
+Epoch: 48 Train Loss: 0.752 Train KD_Loss: 0.095 Train Acc: 0.497 Eval Loss: 1.289 Eval Acc: 0.541
+Epoch: 49 Train Loss: 0.747 Train KD_Loss: 0.092 Train Acc: 0.501 Eval Loss: 1.221 Eval Acc: 0.573
+Epoch: 50 Train Loss: 0.755 Train KD_Loss: 0.096 Train Acc: 0.496 Eval Loss: 1.273 Eval Acc: 0.552
+Epoch: 51 Train Loss: 0.739 Train KD_Loss: 0.093 Train Acc: 0.504 Eval Loss: 1.262 Eval Acc: 0.558
+Epoch: 52 Train Loss: 0.748 Train KD_Loss: 0.095 Train Acc: 0.502 Eval Loss: 1.264 Eval Acc: 0.555
+Epoch: 53 Train Loss: 0.751 Train KD_Loss: 0.094 Train Acc: 0.496 Eval Loss: 1.346 Eval Acc: 0.520
+Epoch: 54 Train Loss: 0.751 Train KD_Loss: 0.095 Train Acc: 0.498 Eval Loss: 1.285 Eval Acc: 0.546
+Epoch: 55 Train Loss: 0.758 Train KD_Loss: 0.097 Train Acc: 0.497 Eval Loss: 1.273 Eval Acc: 0.548
+Epoch: 56 Train Loss: 0.752 Train KD_Loss: 0.095 Train Acc: 0.495 Eval Loss: 1.282 Eval Acc: 0.541
+Epoch: 57 Train Loss: 0.744 Train KD_Loss: 0.093 Train Acc: 0.501 Eval Loss: 1.242 Eval Acc: 0.565
+Epoch: 58 Train Loss: 0.751 Train KD_Loss: 0.095 Train Acc: 0.497 Eval Loss: 1.252 Eval Acc: 0.556
+Epoch: 59 Train Loss: 0.747 Train KD_Loss: 0.094 Train Acc: 0.498 Eval Loss: 1.340 Eval Acc: 0.528
+Epoch: 60 Train Loss: 0.748 Train KD_Loss: 0.095 Train Acc: 0.500 Eval Loss: 1.320 Eval Acc: 0.520
+Epoch: 61 Train Loss: 0.752 Train KD_Loss: 0.096 Train Acc: 0.498 Eval Loss: 1.300 Eval Acc: 0.532
+Epoch: 62 Train Loss: 0.750 Train KD_Loss: 0.094 Train Acc: 0.500 Eval Loss: 1.308 Eval Acc: 0.539
+Epoch: 63 Train Loss: 0.756 Train KD_Loss: 0.095 Train Acc: 0.499 Eval Loss: 1.319 Eval Acc: 0.526
+Epoch: 64 Train Loss: 0.742 Train KD_Loss: 0.094 Train Acc: 0.503 Eval Loss: 1.308 Eval Acc: 0.540
+Epoch: 65 Train Loss: 0.751 Train KD_Loss: 0.094 Train Acc: 0.497 Eval Loss: 1.355 Eval Acc: 0.519
+Epoch: 66 Train Loss: 0.747 Train KD_Loss: 0.096 Train Acc: 0.503 Eval Loss: 1.378 Eval Acc: 0.512
+Epoch: 67 Train Loss: 0.746 Train KD_Loss: 0.096 Train Acc: 0.501 Eval Loss: 1.342 Eval Acc: 0.516
+Epoch: 68 Train Loss: 0.750 Train KD_Loss: 0.095 Train Acc: 0.499 Eval Loss: 1.291 Eval Acc: 0.542
+Epoch: 69 Train Loss: 0.749 Train KD_Loss: 0.094 Train Acc: 0.498 Eval Loss: 1.283 Eval Acc: 0.549
+Epoch: 70 Train Loss: 0.748 Train KD_Loss: 0.094 Train Acc: 0.499 Eval Loss: 1.311 Eval Acc: 0.540
+Epoch: 71 Train Loss: 0.743 Train KD_Loss: 0.095 Train Acc: 0.504 Eval Loss: 1.358 Eval Acc: 0.525
+Epoch: 72 Train Loss: 0.754 Train KD_Loss: 0.096 Train Acc: 0.497 Eval Loss: 1.324 Eval Acc: 0.529
+Epoch: 73 Train Loss: 0.742 Train KD_Loss: 0.094 Train Acc: 0.502 Eval Loss: 1.294 Eval Acc: 0.545
+Epoch: 74 Train Loss: 0.755 Train KD_Loss: 0.097 Train Acc: 0.494 Eval Loss: 1.305 Eval Acc: 0.535
+Epoch: 75 Train Loss: 0.747 Train KD_Loss: 0.094 Train Acc: 0.502 Eval Loss: 1.269 Eval Acc: 0.554
+Epoch: 76 Train Loss: 0.749 Train KD_Loss: 0.094 Train Acc: 0.499 Eval Loss: 1.375 Eval Acc: 0.510
+Epoch: 77 Train Loss: 0.752 Train KD_Loss: 0.096 Train Acc: 0.494 Eval Loss: 1.255 Eval Acc: 0.553
+Epoch: 78 Train Loss: 0.746 Train KD_Loss: 0.094 Train Acc: 0.501 Eval Loss: 1.325 Eval Acc: 0.536
+Epoch: 79 Train Loss: 0.755 Train KD_Loss: 0.097 Train Acc: 0.493 Eval Loss: 1.299 Eval Acc: 0.537
+Epoch: 80 Train Loss: 0.752 Train KD_Loss: 0.095 Train Acc: 0.497 Eval Loss: 1.265 Eval Acc: 0.561
+Epoch: 81 Train Loss: 0.759 Train KD_Loss: 0.096 Train Acc: 0.496 Eval Loss: 1.269 Eval Acc: 0.549
+Epoch: 82 Train Loss: 0.757 Train KD_Loss: 0.096 Train Acc: 0.494 Eval Loss: 1.311 Eval Acc: 0.535
+Epoch: 83 Train Loss: 0.749 Train KD_Loss: 0.094 Train Acc: 0.497 Eval Loss: 1.295 Eval Acc: 0.540
+Epoch: 84 Train Loss: 0.745 Train KD_Loss: 0.093 Train Acc: 0.500 Eval Loss: 1.329 Eval Acc: 0.526
+Epoch: 85 Train Loss: 0.749 Train KD_Loss: 0.095 Train Acc: 0.500 Eval Loss: 1.280 Eval Acc: 0.543
+Epoch: 86 Train Loss: 0.742 Train KD_Loss: 0.092 Train Acc: 0.501 Eval Loss: 1.270 Eval Acc: 0.555
+Epoch: 87 Train Loss: 0.754 Train KD_Loss: 0.095 Train Acc: 0.493 Eval Loss: 1.241 Eval Acc: 0.565
+Epoch: 88 Train Loss: 0.752 Train KD_Loss: 0.095 Train Acc: 0.499 Eval Loss: 1.271 Eval Acc: 0.553
+Epoch: 89 Train Loss: 0.747 Train KD_Loss: 0.093 Train Acc: 0.502 Eval Loss: 1.268 Eval Acc: 0.553
+Epoch: 90 Train Loss: 0.747 Train KD_Loss: 0.094 Train Acc: 0.501 Eval Loss: 1.257 Eval Acc: 0.549
+Epoch: 91 Train Loss: 0.748 Train KD_Loss: 0.094 Train Acc: 0.502 Eval Loss: 1.297 Eval Acc: 0.542
+Epoch: 92 Train Loss: 0.750 Train KD_Loss: 0.095 Train Acc: 0.496 Eval Loss: 1.253 Eval Acc: 0.564
+Epoch: 93 Train Loss: 0.744 Train KD_Loss: 0.093 Train Acc: 0.504 Eval Loss: 1.288 Eval Acc: 0.540
+Epoch: 94 Train Loss: 0.742 Train KD_Loss: 0.093 Train Acc: 0.504 Eval Loss: 1.242 Eval Acc: 0.560
+Epoch: 95 Train Loss: 0.751 Train KD_Loss: 0.095 Train Acc: 0.499 Eval Loss: 1.251 Eval Acc: 0.554
+Epoch: 96 Train Loss: 0.746 Train KD_Loss: 0.093 Train Acc: 0.503 Eval Loss: 1.417 Eval Acc: 0.509
+Epoch: 97 Train Loss: 0.750 Train KD_Loss: 0.095 Train Acc: 0.500 Eval Loss: 1.245 Eval Acc: 0.554
+Epoch: 98 Train Loss: 0.752 Train KD_Loss: 0.096 Train Acc: 0.498 Eval Loss: 1.356 Eval Acc: 0.521
+Epoch: 99 Train Loss: 0.745 Train KD_Loss: 0.095 Train Acc: 0.505 Eval Loss: 1.307 Eval Acc: 0.542
+Epoch: 100 Train Loss: 0.674 Train KD_Loss: 0.076 Train Acc: 0.550 Eval Loss: 1.153 Eval Acc: 0.595
+Epoch: 101 Train Loss: 0.652 Train KD_Loss: 0.073 Train Acc: 0.567 Eval Loss: 1.126 Eval Acc: 0.605
+Epoch: 102 Train Loss: 0.648 Train KD_Loss: 0.072 Train Acc: 0.568 Eval Loss: 1.127 Eval Acc: 0.606
+Epoch: 103 Train Loss: 0.642 Train KD_Loss: 0.071 Train Acc: 0.576 Eval Loss: 1.123 Eval Acc: 0.606
+Epoch: 104 Train Loss: 0.637 Train KD_Loss: 0.070 Train Acc: 0.577 Eval Loss: 1.107 Eval Acc: 0.612
+Epoch: 105 Train Loss: 0.637 Train KD_Loss: 0.070 Train Acc: 0.578 Eval Loss: 1.100 Eval Acc: 0.621
+Epoch: 106 Train Loss: 0.633 Train KD_Loss: 0.069 Train Acc: 0.578 Eval Loss: 1.102 Eval Acc: 0.621
+Epoch: 107 Train Loss: 0.629 Train KD_Loss: 0.068 Train Acc: 0.581 Eval Loss: 1.083 Eval Acc: 0.628
+Epoch: 108 Train Loss: 0.630 Train KD_Loss: 0.067 Train Acc: 0.580 Eval Loss: 1.085 Eval Acc: 0.625
+Epoch: 109 Train Loss: 0.629 Train KD_Loss: 0.068 Train Acc: 0.583 Eval Loss: 1.081 Eval Acc: 0.627
+Epoch: 110 Train Loss: 0.625 Train KD_Loss: 0.067 Train Acc: 0.585 Eval Loss: 1.079 Eval Acc: 0.630
+Epoch: 111 Train Loss: 0.626 Train KD_Loss: 0.066 Train Acc: 0.584 Eval Loss: 1.084 Eval Acc: 0.624
+Epoch: 112 Train Loss: 0.628 Train KD_Loss: 0.066 Train Acc: 0.582 Eval Loss: 1.076 Eval Acc: 0.630
+Epoch: 113 Train Loss: 0.623 Train KD_Loss: 0.066 Train Acc: 0.585 Eval Loss: 1.075 Eval Acc: 0.632
+Epoch: 114 Train Loss: 0.624 Train KD_Loss: 0.066 Train Acc: 0.585 Eval Loss: 1.076 Eval Acc: 0.627
+Epoch: 115 Train Loss: 0.622 Train KD_Loss: 0.066 Train Acc: 0.589 Eval Loss: 1.075 Eval Acc: 0.631
+Epoch: 116 Train Loss: 0.621 Train KD_Loss: 0.065 Train Acc: 0.587 Eval Loss: 1.066 Eval Acc: 0.633
+Epoch: 117 Train Loss: 0.620 Train KD_Loss: 0.065 Train Acc: 0.588 Eval Loss: 1.079 Eval Acc: 0.627
+Epoch: 118 Train Loss: 0.621 Train KD_Loss: 0.065 Train Acc: 0.587 Eval Loss: 1.080 Eval Acc: 0.627
+Epoch: 119 Train Loss: 0.621 Train KD_Loss: 0.065 Train Acc: 0.587 Eval Loss: 1.074 Eval Acc: 0.628
+Epoch: 120 Train Loss: 0.617 Train KD_Loss: 0.065 Train Acc: 0.588 Eval Loss: 1.075 Eval Acc: 0.630
+Epoch: 121 Train Loss: 0.621 Train KD_Loss: 0.065 Train Acc: 0.586 Eval Loss: 1.066 Eval Acc: 0.632
+Epoch: 122 Train Loss: 0.617 Train KD_Loss: 0.064 Train Acc: 0.586 Eval Loss: 1.067 Eval Acc: 0.630
+Epoch: 123 Train Loss: 0.618 Train KD_Loss: 0.064 Train Acc: 0.590 Eval Loss: 1.068 Eval Acc: 0.630
+Epoch: 124 Train Loss: 0.616 Train KD_Loss: 0.064 Train Acc: 0.591 Eval Loss: 1.058 Eval Acc: 0.636
+Epoch: 125 Train Loss: 0.618 Train KD_Loss: 0.065 Train Acc: 0.587 Eval Loss: 1.073 Eval Acc: 0.627
+Epoch: 126 Train Loss: 0.615 Train KD_Loss: 0.064 Train Acc: 0.593 Eval Loss: 1.070 Eval Acc: 0.627
+Epoch: 127 Train Loss: 0.616 Train KD_Loss: 0.064 Train Acc: 0.593 Eval Loss: 1.054 Eval Acc: 0.637
+Epoch: 128 Train Loss: 0.615 Train KD_Loss: 0.064 Train Acc: 0.591 Eval Loss: 1.051 Eval Acc: 0.635
+Epoch: 129 Train Loss: 0.615 Train KD_Loss: 0.064 Train Acc: 0.591 Eval Loss: 1.061 Eval Acc: 0.634
+Epoch: 130 Train Loss: 0.615 Train KD_Loss: 0.064 Train Acc: 0.593 Eval Loss: 1.066 Eval Acc: 0.636
+Epoch: 131 Train Loss: 0.615 Train KD_Loss: 0.064 Train Acc: 0.590 Eval Loss: 1.052 Eval Acc: 0.637
+Epoch: 132 Train Loss: 0.614 Train KD_Loss: 0.064 Train Acc: 0.593 Eval Loss: 1.057 Eval Acc: 0.634
+Epoch: 133 Train Loss: 0.616 Train KD_Loss: 0.064 Train Acc: 0.591 Eval Loss: 1.063 Eval Acc: 0.633
+Epoch: 134 Train Loss: 0.612 Train KD_Loss: 0.064 Train Acc: 0.594 Eval Loss: 1.055 Eval Acc: 0.633
+Epoch: 135 Train Loss: 0.615 Train KD_Loss: 0.064 Train Acc: 0.594 Eval Loss: 1.052 Eval Acc: 0.636
+Epoch: 136 Train Loss: 0.612 Train KD_Loss: 0.064 Train Acc: 0.595 Eval Loss: 1.057 Eval Acc: 0.637
+Epoch: 137 Train Loss: 0.610 Train KD_Loss: 0.064 Train Acc: 0.597 Eval Loss: 1.052 Eval Acc: 0.636
+Epoch: 138 Train Loss: 0.613 Train KD_Loss: 0.064 Train Acc: 0.590 Eval Loss: 1.048 Eval Acc: 0.637
+Epoch: 139 Train Loss: 0.613 Train KD_Loss: 0.064 Train Acc: 0.592 Eval Loss: 1.066 Eval Acc: 0.630
+Epoch: 140 Train Loss: 0.608 Train KD_Loss: 0.064 Train Acc: 0.597 Eval Loss: 1.053 Eval Acc: 0.634
+Epoch: 141 Train Loss: 0.612 Train KD_Loss: 0.064 Train Acc: 0.594 Eval Loss: 1.047 Eval Acc: 0.639
+Epoch: 142 Train Loss: 0.612 Train KD_Loss: 0.064 Train Acc: 0.595 Eval Loss: 1.059 Eval Acc: 0.632
+Epoch: 143 Train Loss: 0.611 Train KD_Loss: 0.064 Train Acc: 0.596 Eval Loss: 1.061 Eval Acc: 0.637
+Epoch: 144 Train Loss: 0.613 Train KD_Loss: 0.063 Train Acc: 0.595 Eval Loss: 1.058 Eval Acc: 0.632
+Epoch: 145 Train Loss: 0.611 Train KD_Loss: 0.063 Train Acc: 0.596 Eval Loss: 1.043 Eval Acc: 0.641
+Epoch: 146 Train Loss: 0.612 Train KD_Loss: 0.063 Train Acc: 0.597 Eval Loss: 1.054 Eval Acc: 0.632
+Epoch: 147 Train Loss: 0.610 Train KD_Loss: 0.063 Train Acc: 0.596 Eval Loss: 1.079 Eval Acc: 0.628
+Epoch: 148 Train Loss: 0.612 Train KD_Loss: 0.063 Train Acc: 0.595 Eval Loss: 1.053 Eval Acc: 0.633
+Epoch: 149 Train Loss: 0.612 Train KD_Loss: 0.063 Train Acc: 0.594 Eval Loss: 1.067 Eval Acc: 0.623
+Epoch: 150 Train Loss: 0.595 Train KD_Loss: 0.060 Train Acc: 0.605 Eval Loss: 1.029 Eval Acc: 0.643
+Epoch: 151 Train Loss: 0.595 Train KD_Loss: 0.059 Train Acc: 0.608 Eval Loss: 1.028 Eval Acc: 0.644
+Epoch: 152 Train Loss: 0.592 Train KD_Loss: 0.059 Train Acc: 0.608 Eval Loss: 1.025 Eval Acc: 0.643
+Epoch: 153 Train Loss: 0.594 Train KD_Loss: 0.060 Train Acc: 0.609 Eval Loss: 1.026 Eval Acc: 0.643
+Epoch: 154 Train Loss: 0.592 Train KD_Loss: 0.059 Train Acc: 0.609 Eval Loss: 1.024 Eval Acc: 0.644
+Epoch: 155 Train Loss: 0.592 Train KD_Loss: 0.059 Train Acc: 0.608 Eval Loss: 1.025 Eval Acc: 0.643
+Epoch: 156 Train Loss: 0.594 Train KD_Loss: 0.059 Train Acc: 0.610 Eval Loss: 1.024 Eval Acc: 0.645
+Epoch: 157 Train Loss: 0.591 Train KD_Loss: 0.059 Train Acc: 0.610 Eval Loss: 1.023 Eval Acc: 0.646
+Epoch: 158 Train Loss: 0.593 Train KD_Loss: 0.059 Train Acc: 0.611 Eval Loss: 1.026 Eval Acc: 0.645
+Epoch: 159 Train Loss: 0.590 Train KD_Loss: 0.059 Train Acc: 0.609 Eval Loss: 1.024 Eval Acc: 0.644
+Epoch: 160 Train Loss: 0.590 Train KD_Loss: 0.059 Train Acc: 0.609 Eval Loss: 1.022 Eval Acc: 0.646
+Epoch: 161 Train Loss: 0.591 Train KD_Loss: 0.059 Train Acc: 0.611 Eval Loss: 1.021 Eval Acc: 0.647
+Epoch: 162 Train Loss: 0.590 Train KD_Loss: 0.059 Train Acc: 0.611 Eval Loss: 1.021 Eval Acc: 0.646
+Epoch: 163 Train Loss: 0.591 Train KD_Loss: 0.060 Train Acc: 0.609 Eval Loss: 1.021 Eval Acc: 0.644
+Epoch: 164 Train Loss: 0.590 Train KD_Loss: 0.059 Train Acc: 0.610 Eval Loss: 1.024 Eval Acc: 0.644
+Epoch: 165 Train Loss: 0.588 Train KD_Loss: 0.060 Train Acc: 0.613 Eval Loss: 1.023 Eval Acc: 0.647
+Epoch: 166 Train Loss: 0.591 Train KD_Loss: 0.059 Train Acc: 0.611 Eval Loss: 1.022 Eval Acc: 0.644
+Epoch: 167 Train Loss: 0.591 Train KD_Loss: 0.059 Train Acc: 0.610 Eval Loss: 1.023 Eval Acc: 0.646
+Epoch: 168 Train Loss: 0.587 Train KD_Loss: 0.059 Train Acc: 0.612 Eval Loss: 1.020 Eval Acc: 0.647
+Epoch: 169 Train Loss: 0.590 Train KD_Loss: 0.060 Train Acc: 0.609 Eval Loss: 1.025 Eval Acc: 0.645
+Epoch: 170 Train Loss: 0.589 Train KD_Loss: 0.059 Train Acc: 0.611 Eval Loss: 1.023 Eval Acc: 0.646
+Epoch: 171 Train Loss: 0.591 Train KD_Loss: 0.060 Train Acc: 0.610 Eval Loss: 1.021 Eval Acc: 0.647
+Epoch: 172 Train Loss: 0.588 Train KD_Loss: 0.060 Train Acc: 0.610 Eval Loss: 1.022 Eval Acc: 0.644
+Epoch: 173 Train Loss: 0.591 Train KD_Loss: 0.059 Train Acc: 0.609 Eval Loss: 1.021 Eval Acc: 0.647
+Epoch: 174 Train Loss: 0.589 Train KD_Loss: 0.059 Train Acc: 0.613 Eval Loss: 1.019 Eval Acc: 0.648
+Epoch: 175 Train Loss: 0.587 Train KD_Loss: 0.059 Train Acc: 0.612 Eval Loss: 1.020 Eval Acc: 0.645
+Epoch: 176 Train Loss: 0.587 Train KD_Loss: 0.059 Train Acc: 0.613 Eval Loss: 1.022 Eval Acc: 0.648
+Epoch: 177 Train Loss: 0.591 Train KD_Loss: 0.059 Train Acc: 0.612 Eval Loss: 1.020 Eval Acc: 0.645
+Epoch: 178 Train Loss: 0.588 Train KD_Loss: 0.059 Train Acc: 0.611 Eval Loss: 1.019 Eval Acc: 0.648
+Epoch: 179 Train Loss: 0.588 Train KD_Loss: 0.059 Train Acc: 0.613 Eval Loss: 1.018 Eval Acc: 0.646
+Epoch: 180 Train Loss: 0.589 Train KD_Loss: 0.059 Train Acc: 0.612 Eval Loss: 1.019 Eval Acc: 0.648
+Epoch: 181 Train Loss: 0.589 Train KD_Loss: 0.059 Train Acc: 0.609 Eval Loss: 1.019 Eval Acc: 0.647
+Epoch: 182 Train Loss: 0.590 Train KD_Loss: 0.059 Train Acc: 0.610 Eval Loss: 1.020 Eval Acc: 0.648
+Epoch: 183 Train Loss: 0.588 Train KD_Loss: 0.059 Train Acc: 0.613 Eval Loss: 1.020 Eval Acc: 0.647
+Epoch: 184 Train Loss: 0.587 Train KD_Loss: 0.059 Train Acc: 0.614 Eval Loss: 1.019 Eval Acc: 0.647
+Epoch: 185 Train Loss: 0.589 Train KD_Loss: 0.059 Train Acc: 0.610 Eval Loss: 1.021 Eval Acc: 0.646
+Epoch: 186 Train Loss: 0.591 Train KD_Loss: 0.059 Train Acc: 0.608 Eval Loss: 1.021 Eval Acc: 0.646
+Epoch: 187 Train Loss: 0.589 Train KD_Loss: 0.059 Train Acc: 0.610 Eval Loss: 1.020 Eval Acc: 0.646
+Epoch: 188 Train Loss: 0.589 Train KD_Loss: 0.059 Train Acc: 0.611 Eval Loss: 1.019 Eval Acc: 0.647
+Epoch: 189 Train Loss: 0.588 Train KD_Loss: 0.059 Train Acc: 0.610 Eval Loss: 1.019 Eval Acc: 0.645
+Epoch: 190 Train Loss: 0.588 Train KD_Loss: 0.059 Train Acc: 0.614 Eval Loss: 1.017 Eval Acc: 0.647
+Epoch: 191 Train Loss: 0.589 Train KD_Loss: 0.059 Train Acc: 0.613 Eval Loss: 1.018 Eval Acc: 0.646
+Epoch: 192 Train Loss: 0.588 Train KD_Loss: 0.059 Train Acc: 0.613 Eval Loss: 1.018 Eval Acc: 0.647
+Epoch: 193 Train Loss: 0.588 Train KD_Loss: 0.059 Train Acc: 0.611 Eval Loss: 1.017 Eval Acc: 0.646
+Epoch: 194 Train Loss: 0.590 Train KD_Loss: 0.059 Train Acc: 0.611 Eval Loss: 1.019 Eval Acc: 0.646
+Epoch: 195 Train Loss: 0.589 Train KD_Loss: 0.059 Train Acc: 0.611 Eval Loss: 1.018 Eval Acc: 0.647
+Epoch: 196 Train Loss: 0.588 Train KD_Loss: 0.059 Train Acc: 0.612 Eval Loss: 1.018 Eval Acc: 0.644
+Epoch: 197 Train Loss: 0.588 Train KD_Loss: 0.059 Train Acc: 0.613 Eval Loss: 1.017 Eval Acc: 0.645
+Epoch: 198 Train Loss: 0.589 Train KD_Loss: 0.058 Train Acc: 0.610 Eval Loss: 1.017 Eval Acc: 0.648
+Epoch: 199 Train Loss: 0.588 Train KD_Loss: 0.058 Train Acc: 0.613 Eval Loss: 1.019 Eval Acc: 0.649
+Student best accuracy: tensor(0.6492, device='cuda:0')

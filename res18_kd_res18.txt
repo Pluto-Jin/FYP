@@ -1,0 +1,437 @@
+ResNet(
+  (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (layer1): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+  )
+  (layer2): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+  )
+  (layer3): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+  )
+  (layer4): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+  (fc): Linear(in_features=512, out_features=10, bias=True)
+)
+ResNet(
+  (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (layer1): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+  )
+  (layer2): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+  )
+  (layer3): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+  )
+  (layer4): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (skip_add): FloatFunctional(
+        (activation_post_process): Identity()
+      )
+      (relu2): ReLU(inplace=True)
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+  (fc): Linear(in_features=512, out_features=10, bias=True)
+)
+Files already downloaded and verified
+Files already downloaded and verified
+/usr/local/lib/python3.7/dist-packages/torch/nn/functional.py:2748: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  "reduction: 'mean' divides the total loss by both the batch size and the support size."
+Epoch: 00 Train Loss: 1.853 Train KD_Loss: 1.698 Train Acc: 0.337 Eval Loss: 1.677 Eval Acc: 0.4430
+Epoch: 01 Train Loss: 1.452 Train KD_Loss: 1.378 Train Acc: 0.476 Eval Loss: 1.460 Eval Acc: 0.5295
+Epoch: 02 Train Loss: 1.254 Train KD_Loss: 1.188 Train Acc: 0.553 Eval Loss: 1.184 Eval Acc: 0.6054
+Epoch: 03 Train Loss: 1.110 Train KD_Loss: 1.048 Train Acc: 0.610 Eval Loss: 1.127 Eval Acc: 0.6436
+Epoch: 04 Train Loss: 1.018 Train KD_Loss: 0.953 Train Acc: 0.643 Eval Loss: 1.062 Eval Acc: 0.6768
+Epoch: 05 Train Loss: 0.944 Train KD_Loss: 0.881 Train Acc: 0.672 Eval Loss: 1.040 Eval Acc: 0.6839
+Epoch: 06 Train Loss: 0.885 Train KD_Loss: 0.820 Train Acc: 0.693 Eval Loss: 0.964 Eval Acc: 0.7061
+Epoch: 07 Train Loss: 0.838 Train KD_Loss: 0.771 Train Acc: 0.711 Eval Loss: 0.956 Eval Acc: 0.7067
+Epoch: 08 Train Loss: 0.792 Train KD_Loss: 0.726 Train Acc: 0.723 Eval Loss: 0.872 Eval Acc: 0.7308
+Epoch: 09 Train Loss: 0.744 Train KD_Loss: 0.679 Train Acc: 0.744 Eval Loss: 0.807 Eval Acc: 0.7567
+Epoch: 10 Train Loss: 0.713 Train KD_Loss: 0.647 Train Acc: 0.753 Eval Loss: 0.795 Eval Acc: 0.7668
+Epoch: 11 Train Loss: 0.684 Train KD_Loss: 0.621 Train Acc: 0.763 Eval Loss: 0.820 Eval Acc: 0.7638
+Epoch: 12 Train Loss: 0.662 Train KD_Loss: 0.598 Train Acc: 0.769 Eval Loss: 0.810 Eval Acc: 0.7643
+Epoch: 13 Train Loss: 0.640 Train KD_Loss: 0.579 Train Acc: 0.776 Eval Loss: 0.811 Eval Acc: 0.7637
+Epoch: 14 Train Loss: 0.620 Train KD_Loss: 0.556 Train Acc: 0.783 Eval Loss: 0.764 Eval Acc: 0.7806
+Epoch: 15 Train Loss: 0.597 Train KD_Loss: 0.536 Train Acc: 0.790 Eval Loss: 0.762 Eval Acc: 0.7718
+Epoch: 16 Train Loss: 0.585 Train KD_Loss: 0.525 Train Acc: 0.794 Eval Loss: 0.749 Eval Acc: 0.7861
+Epoch: 17 Train Loss: 0.566 Train KD_Loss: 0.509 Train Acc: 0.801 Eval Loss: 0.778 Eval Acc: 0.7793
+Epoch: 18 Train Loss: 0.556 Train KD_Loss: 0.497 Train Acc: 0.804 Eval Loss: 0.735 Eval Acc: 0.7877
+Epoch: 19 Train Loss: 0.544 Train KD_Loss: 0.486 Train Acc: 0.808 Eval Loss: 0.802 Eval Acc: 0.7819
+Epoch: 20 Train Loss: 0.539 Train KD_Loss: 0.481 Train Acc: 0.812 Eval Loss: 0.755 Eval Acc: 0.7957
+Epoch: 21 Train Loss: 0.525 Train KD_Loss: 0.469 Train Acc: 0.814 Eval Loss: 0.668 Eval Acc: 0.8029
+Epoch: 22 Train Loss: 0.510 Train KD_Loss: 0.455 Train Acc: 0.820 Eval Loss: 0.720 Eval Acc: 0.7944
+Epoch: 23 Train Loss: 0.507 Train KD_Loss: 0.453 Train Acc: 0.820 Eval Loss: 0.739 Eval Acc: 0.8020
+Epoch: 24 Train Loss: 0.493 Train KD_Loss: 0.440 Train Acc: 0.827 Eval Loss: 0.683 Eval Acc: 0.8013
+Epoch: 25 Train Loss: 0.485 Train KD_Loss: 0.432 Train Acc: 0.828 Eval Loss: 0.759 Eval Acc: 0.7915
+Epoch: 26 Train Loss: 0.482 Train KD_Loss: 0.429 Train Acc: 0.831 Eval Loss: 0.759 Eval Acc: 0.7975
+Epoch: 27 Train Loss: 0.477 Train KD_Loss: 0.425 Train Acc: 0.833 Eval Loss: 0.737 Eval Acc: 0.8006
+Epoch: 28 Train Loss: 0.465 Train KD_Loss: 0.415 Train Acc: 0.833 Eval Loss: 0.733 Eval Acc: 0.8060
+Epoch: 29 Train Loss: 0.466 Train KD_Loss: 0.415 Train Acc: 0.836 Eval Loss: 0.703 Eval Acc: 0.8000
+Epoch: 30 Train Loss: 0.457 Train KD_Loss: 0.407 Train Acc: 0.837 Eval Loss: 0.746 Eval Acc: 0.8015
+Epoch: 31 Train Loss: 0.447 Train KD_Loss: 0.398 Train Acc: 0.842 Eval Loss: 0.733 Eval Acc: 0.8015
+Epoch: 32 Train Loss: 0.441 Train KD_Loss: 0.394 Train Acc: 0.842 Eval Loss: 0.716 Eval Acc: 0.8050
+Epoch: 33 Train Loss: 0.437 Train KD_Loss: 0.390 Train Acc: 0.845 Eval Loss: 0.710 Eval Acc: 0.8145
+Epoch: 34 Train Loss: 0.428 Train KD_Loss: 0.381 Train Acc: 0.847 Eval Loss: 0.690 Eval Acc: 0.8190
+Epoch: 35 Train Loss: 0.427 Train KD_Loss: 0.382 Train Acc: 0.848 Eval Loss: 0.785 Eval Acc: 0.7996
+Epoch: 36 Train Loss: 0.422 Train KD_Loss: 0.376 Train Acc: 0.851 Eval Loss: 0.696 Eval Acc: 0.8077
+Epoch: 37 Train Loss: 0.420 Train KD_Loss: 0.375 Train Acc: 0.853 Eval Loss: 0.723 Eval Acc: 0.8097
+Epoch: 38 Train Loss: 0.415 Train KD_Loss: 0.370 Train Acc: 0.852 Eval Loss: 0.768 Eval Acc: 0.8062
+Epoch: 39 Train Loss: 0.405 Train KD_Loss: 0.362 Train Acc: 0.855 Eval Loss: 0.679 Eval Acc: 0.8146
+Epoch: 40 Train Loss: 0.406 Train KD_Loss: 0.363 Train Acc: 0.856 Eval Loss: 0.682 Eval Acc: 0.8242
+Epoch: 41 Train Loss: 0.408 Train KD_Loss: 0.364 Train Acc: 0.856 Eval Loss: 0.708 Eval Acc: 0.8200
+Epoch: 42 Train Loss: 0.404 Train KD_Loss: 0.361 Train Acc: 0.857 Eval Loss: 0.743 Eval Acc: 0.8126
+Epoch: 43 Train Loss: 0.396 Train KD_Loss: 0.354 Train Acc: 0.859 Eval Loss: 0.706 Eval Acc: 0.8156
+Epoch: 44 Train Loss: 0.393 Train KD_Loss: 0.349 Train Acc: 0.861 Eval Loss: 0.750 Eval Acc: 0.8106
+Epoch: 45 Train Loss: 0.389 Train KD_Loss: 0.349 Train Acc: 0.863 Eval Loss: 0.692 Eval Acc: 0.8284
+Epoch: 46 Train Loss: 0.381 Train KD_Loss: 0.341 Train Acc: 0.863 Eval Loss: 0.761 Eval Acc: 0.8077
+Epoch: 47 Train Loss: 0.377 Train KD_Loss: 0.337 Train Acc: 0.865 Eval Loss: 0.673 Eval Acc: 0.8220
+Epoch: 48 Train Loss: 0.387 Train KD_Loss: 0.346 Train Acc: 0.861 Eval Loss: 0.724 Eval Acc: 0.8134
+Epoch: 49 Train Loss: 0.380 Train KD_Loss: 0.340 Train Acc: 0.865 Eval Loss: 0.736 Eval Acc: 0.8111
+Epoch: 50 Train Loss: 0.379 Train KD_Loss: 0.340 Train Acc: 0.865 Eval Loss: 0.723 Eval Acc: 0.8231
+Epoch: 51 Train Loss: 0.369 Train KD_Loss: 0.330 Train Acc: 0.869 Eval Loss: 0.713 Eval Acc: 0.8129
+Epoch: 52 Train Loss: 0.373 Train KD_Loss: 0.334 Train Acc: 0.868 Eval Loss: 0.676 Eval Acc: 0.8300
+Epoch: 53 Train Loss: 0.370 Train KD_Loss: 0.332 Train Acc: 0.869 Eval Loss: 0.744 Eval Acc: 0.8161
+Epoch: 54 Train Loss: 0.365 Train KD_Loss: 0.327 Train Acc: 0.870 Eval Loss: 0.719 Eval Acc: 0.8206
+Epoch: 55 Train Loss: 0.367 Train KD_Loss: 0.329 Train Acc: 0.870 Eval Loss: 0.722 Eval Acc: 0.8164
+Epoch: 56 Train Loss: 0.363 Train KD_Loss: 0.327 Train Acc: 0.871 Eval Loss: 0.727 Eval Acc: 0.8201
+Epoch: 57 Train Loss: 0.362 Train KD_Loss: 0.324 Train Acc: 0.872 Eval Loss: 0.670 Eval Acc: 0.8318
+Epoch: 58 Train Loss: 0.362 Train KD_Loss: 0.325 Train Acc: 0.871 Eval Loss: 0.716 Eval Acc: 0.8181
+Epoch: 59 Train Loss: 0.359 Train KD_Loss: 0.322 Train Acc: 0.873 Eval Loss: 0.701 Eval Acc: 0.8225
+Epoch: 60 Train Loss: 0.355 Train KD_Loss: 0.319 Train Acc: 0.876 Eval Loss: 0.757 Eval Acc: 0.8206
+Epoch: 61 Train Loss: 0.352 Train KD_Loss: 0.317 Train Acc: 0.877 Eval Loss: 0.811 Eval Acc: 0.8139
+Epoch: 62 Train Loss: 0.351 Train KD_Loss: 0.314 Train Acc: 0.875 Eval Loss: 0.733 Eval Acc: 0.8225
+Epoch: 63 Train Loss: 0.350 Train KD_Loss: 0.315 Train Acc: 0.876 Eval Loss: 0.708 Eval Acc: 0.8261
+Epoch: 64 Train Loss: 0.349 Train KD_Loss: 0.314 Train Acc: 0.876 Eval Loss: 0.709 Eval Acc: 0.8227
+Epoch: 65 Train Loss: 0.352 Train KD_Loss: 0.318 Train Acc: 0.873 Eval Loss: 0.689 Eval Acc: 0.8274
+Epoch: 66 Train Loss: 0.351 Train KD_Loss: 0.315 Train Acc: 0.875 Eval Loss: 0.729 Eval Acc: 0.8262
+Epoch: 67 Train Loss: 0.343 Train KD_Loss: 0.310 Train Acc: 0.879 Eval Loss: 0.713 Eval Acc: 0.8245
+Epoch: 68 Train Loss: 0.344 Train KD_Loss: 0.309 Train Acc: 0.878 Eval Loss: 0.667 Eval Acc: 0.8301
+Epoch: 69 Train Loss: 0.339 Train KD_Loss: 0.306 Train Acc: 0.880 Eval Loss: 0.625 Eval Acc: 0.8416
+Epoch: 70 Train Loss: 0.345 Train KD_Loss: 0.309 Train Acc: 0.876 Eval Loss: 0.813 Eval Acc: 0.8112
+Epoch: 71 Train Loss: 0.343 Train KD_Loss: 0.309 Train Acc: 0.876 Eval Loss: 0.716 Eval Acc: 0.8225
+Epoch: 72 Train Loss: 0.336 Train KD_Loss: 0.304 Train Acc: 0.880 Eval Loss: 0.684 Eval Acc: 0.8281
+Epoch: 73 Train Loss: 0.344 Train KD_Loss: 0.310 Train Acc: 0.879 Eval Loss: 0.686 Eval Acc: 0.8284
+Epoch: 74 Train Loss: 0.332 Train KD_Loss: 0.301 Train Acc: 0.883 Eval Loss: 0.708 Eval Acc: 0.8262
+Epoch: 75 Train Loss: 0.334 Train KD_Loss: 0.301 Train Acc: 0.882 Eval Loss: 0.680 Eval Acc: 0.8335
+Epoch: 76 Train Loss: 0.332 Train KD_Loss: 0.300 Train Acc: 0.884 Eval Loss: 0.710 Eval Acc: 0.8197
+Epoch: 77 Train Loss: 0.333 Train KD_Loss: 0.301 Train Acc: 0.881 Eval Loss: 0.681 Eval Acc: 0.8316
+Epoch: 78 Train Loss: 0.336 Train KD_Loss: 0.303 Train Acc: 0.881 Eval Loss: 0.728 Eval Acc: 0.8238
+Epoch: 79 Train Loss: 0.329 Train KD_Loss: 0.297 Train Acc: 0.883 Eval Loss: 0.714 Eval Acc: 0.8275
+Epoch: 80 Train Loss: 0.328 Train KD_Loss: 0.297 Train Acc: 0.884 Eval Loss: 0.691 Eval Acc: 0.8293
+Epoch: 81 Train Loss: 0.326 Train KD_Loss: 0.296 Train Acc: 0.885 Eval Loss: 0.654 Eval Acc: 0.8345
+Epoch: 82 Train Loss: 0.331 Train KD_Loss: 0.300 Train Acc: 0.883 Eval Loss: 0.763 Eval Acc: 0.8168
+Epoch: 83 Train Loss: 0.323 Train KD_Loss: 0.292 Train Acc: 0.885 Eval Loss: 0.733 Eval Acc: 0.8253
+Epoch: 84 Train Loss: 0.323 Train KD_Loss: 0.292 Train Acc: 0.886 Eval Loss: 0.699 Eval Acc: 0.8248
+Epoch: 85 Train Loss: 0.320 Train KD_Loss: 0.291 Train Acc: 0.887 Eval Loss: 0.747 Eval Acc: 0.8225
+Epoch: 86 Train Loss: 0.326 Train KD_Loss: 0.295 Train Acc: 0.885 Eval Loss: 0.733 Eval Acc: 0.8186
+Epoch: 87 Train Loss: 0.323 Train KD_Loss: 0.292 Train Acc: 0.886 Eval Loss: 0.725 Eval Acc: 0.8287
+Epoch: 88 Train Loss: 0.324 Train KD_Loss: 0.294 Train Acc: 0.884 Eval Loss: 0.752 Eval Acc: 0.8299
+Epoch: 89 Train Loss: 0.324 Train KD_Loss: 0.293 Train Acc: 0.886 Eval Loss: 0.695 Eval Acc: 0.8333
+Epoch: 90 Train Loss: 0.322 Train KD_Loss: 0.292 Train Acc: 0.887 Eval Loss: 0.666 Eval Acc: 0.8347
+Epoch: 91 Train Loss: 0.320 Train KD_Loss: 0.290 Train Acc: 0.889 Eval Loss: 0.745 Eval Acc: 0.8201
+Epoch: 92 Train Loss: 0.317 Train KD_Loss: 0.288 Train Acc: 0.888 Eval Loss: 0.709 Eval Acc: 0.8323
+Epoch: 93 Train Loss: 0.314 Train KD_Loss: 0.285 Train Acc: 0.890 Eval Loss: 0.741 Eval Acc: 0.8208
+Epoch: 94 Train Loss: 0.311 Train KD_Loss: 0.282 Train Acc: 0.891 Eval Loss: 0.776 Eval Acc: 0.8177
+Epoch: 95 Train Loss: 0.320 Train KD_Loss: 0.291 Train Acc: 0.887 Eval Loss: 0.663 Eval Acc: 0.8372
+Epoch: 96 Train Loss: 0.315 Train KD_Loss: 0.286 Train Acc: 0.890 Eval Loss: 0.713 Eval Acc: 0.8291
+Epoch: 97 Train Loss: 0.308 Train KD_Loss: 0.280 Train Acc: 0.893 Eval Loss: 0.680 Eval Acc: 0.8352
+Epoch: 98 Train Loss: 0.315 Train KD_Loss: 0.286 Train Acc: 0.888 Eval Loss: 0.731 Eval Acc: 0.8225
+Epoch: 99 Train Loss: 0.313 Train KD_Loss: 0.285 Train Acc: 0.891 Eval Loss: 0.719 Eval Acc: 0.8205
+Epoch: 100 Train Loss: 0.211 Train KD_Loss: 0.211 Train Acc: 0.928 Eval Loss: 0.563 Eval Acc: 0.8698
+Epoch: 101 Train Loss: 0.176 Train KD_Loss: 0.177 Train Acc: 0.940 Eval Loss: 0.563 Eval Acc: 0.8727
+Epoch: 102 Train Loss: 0.161 Train KD_Loss: 0.164 Train Acc: 0.946 Eval Loss: 0.579 Eval Acc: 0.8715
+Epoch: 103 Train Loss: 0.151 Train KD_Loss: 0.156 Train Acc: 0.950 Eval Loss: 0.572 Eval Acc: 0.8729
+Epoch: 104 Train Loss: 0.143 Train KD_Loss: 0.151 Train Acc: 0.952 Eval Loss: 0.584 Eval Acc: 0.8730
+Epoch: 105 Train Loss: 0.135 Train KD_Loss: 0.145 Train Acc: 0.956 Eval Loss: 0.590 Eval Acc: 0.8743
+Epoch: 106 Train Loss: 0.132 Train KD_Loss: 0.142 Train Acc: 0.958 Eval Loss: 0.589 Eval Acc: 0.8755
+Epoch: 107 Train Loss: 0.128 Train KD_Loss: 0.139 Train Acc: 0.959 Eval Loss: 0.590 Eval Acc: 0.8760
+Epoch: 108 Train Loss: 0.122 Train KD_Loss: 0.134 Train Acc: 0.962 Eval Loss: 0.600 Eval Acc: 0.8743
+Epoch: 109 Train Loss: 0.122 Train KD_Loss: 0.135 Train Acc: 0.961 Eval Loss: 0.599 Eval Acc: 0.8758
+Epoch: 110 Train Loss: 0.118 Train KD_Loss: 0.133 Train Acc: 0.964 Eval Loss: 0.612 Eval Acc: 0.8763
+Epoch: 111 Train Loss: 0.114 Train KD_Loss: 0.129 Train Acc: 0.965 Eval Loss: 0.605 Eval Acc: 0.8752
+Epoch: 112 Train Loss: 0.111 Train KD_Loss: 0.128 Train Acc: 0.967 Eval Loss: 0.615 Eval Acc: 0.8727
+Epoch: 113 Train Loss: 0.110 Train KD_Loss: 0.126 Train Acc: 0.967 Eval Loss: 0.605 Eval Acc: 0.8755
+Epoch: 114 Train Loss: 0.107 Train KD_Loss: 0.124 Train Acc: 0.967 Eval Loss: 0.615 Eval Acc: 0.8740
+Epoch: 115 Train Loss: 0.105 Train KD_Loss: 0.124 Train Acc: 0.969 Eval Loss: 0.613 Eval Acc: 0.8740
+Epoch: 116 Train Loss: 0.104 Train KD_Loss: 0.122 Train Acc: 0.969 Eval Loss: 0.610 Eval Acc: 0.8753
+Epoch: 117 Train Loss: 0.102 Train KD_Loss: 0.121 Train Acc: 0.970 Eval Loss: 0.611 Eval Acc: 0.8755
+Epoch: 118 Train Loss: 0.100 Train KD_Loss: 0.119 Train Acc: 0.972 Eval Loss: 0.614 Eval Acc: 0.8757
+Epoch: 119 Train Loss: 0.099 Train KD_Loss: 0.119 Train Acc: 0.972 Eval Loss: 0.619 Eval Acc: 0.8779
+Epoch: 120 Train Loss: 0.096 Train KD_Loss: 0.118 Train Acc: 0.974 Eval Loss: 0.634 Eval Acc: 0.8765
+Epoch: 121 Train Loss: 0.094 Train KD_Loss: 0.117 Train Acc: 0.975 Eval Loss: 0.624 Eval Acc: 0.8755
+Epoch: 122 Train Loss: 0.094 Train KD_Loss: 0.115 Train Acc: 0.974 Eval Loss: 0.625 Eval Acc: 0.8758
+Epoch: 123 Train Loss: 0.091 Train KD_Loss: 0.114 Train Acc: 0.976 Eval Loss: 0.630 Eval Acc: 0.8785
+Epoch: 124 Train Loss: 0.091 Train KD_Loss: 0.114 Train Acc: 0.977 Eval Loss: 0.631 Eval Acc: 0.8757
+Epoch: 125 Train Loss: 0.089 Train KD_Loss: 0.113 Train Acc: 0.977 Eval Loss: 0.624 Eval Acc: 0.8760
+Epoch: 126 Train Loss: 0.089 Train KD_Loss: 0.113 Train Acc: 0.977 Eval Loss: 0.639 Eval Acc: 0.8747
+Epoch: 127 Train Loss: 0.087 Train KD_Loss: 0.112 Train Acc: 0.978 Eval Loss: 0.640 Eval Acc: 0.8766
+Epoch: 128 Train Loss: 0.084 Train KD_Loss: 0.110 Train Acc: 0.980 Eval Loss: 0.636 Eval Acc: 0.8773
+Epoch: 129 Train Loss: 0.083 Train KD_Loss: 0.109 Train Acc: 0.980 Eval Loss: 0.637 Eval Acc: 0.8792
+Epoch: 130 Train Loss: 0.084 Train KD_Loss: 0.110 Train Acc: 0.979 Eval Loss: 0.639 Eval Acc: 0.8771
+Epoch: 131 Train Loss: 0.082 Train KD_Loss: 0.108 Train Acc: 0.980 Eval Loss: 0.648 Eval Acc: 0.8767
+Epoch: 132 Train Loss: 0.080 Train KD_Loss: 0.107 Train Acc: 0.981 Eval Loss: 0.648 Eval Acc: 0.8769
+Epoch: 133 Train Loss: 0.081 Train KD_Loss: 0.108 Train Acc: 0.981 Eval Loss: 0.642 Eval Acc: 0.8742
+Epoch: 134 Train Loss: 0.080 Train KD_Loss: 0.106 Train Acc: 0.980 Eval Loss: 0.639 Eval Acc: 0.8759
+Epoch: 135 Train Loss: 0.079 Train KD_Loss: 0.106 Train Acc: 0.981 Eval Loss: 0.637 Eval Acc: 0.8778
+Epoch: 136 Train Loss: 0.078 Train KD_Loss: 0.105 Train Acc: 0.982 Eval Loss: 0.645 Eval Acc: 0.8777
+Epoch: 137 Train Loss: 0.077 Train KD_Loss: 0.104 Train Acc: 0.983 Eval Loss: 0.641 Eval Acc: 0.8772
+Epoch: 138 Train Loss: 0.078 Train KD_Loss: 0.105 Train Acc: 0.982 Eval Loss: 0.669 Eval Acc: 0.8752
+Epoch: 139 Train Loss: 0.077 Train KD_Loss: 0.105 Train Acc: 0.983 Eval Loss: 0.650 Eval Acc: 0.8770
+Epoch: 140 Train Loss: 0.075 Train KD_Loss: 0.104 Train Acc: 0.983 Eval Loss: 0.658 Eval Acc: 0.8780
+Epoch: 141 Train Loss: 0.074 Train KD_Loss: 0.103 Train Acc: 0.984 Eval Loss: 0.653 Eval Acc: 0.8772
+Epoch: 142 Train Loss: 0.073 Train KD_Loss: 0.102 Train Acc: 0.985 Eval Loss: 0.652 Eval Acc: 0.8779
+Epoch: 143 Train Loss: 0.073 Train KD_Loss: 0.102 Train Acc: 0.984 Eval Loss: 0.651 Eval Acc: 0.8748
+Epoch: 144 Train Loss: 0.073 Train KD_Loss: 0.102 Train Acc: 0.985 Eval Loss: 0.658 Eval Acc: 0.8759
+Epoch: 145 Train Loss: 0.072 Train KD_Loss: 0.102 Train Acc: 0.985 Eval Loss: 0.656 Eval Acc: 0.8753
+Epoch: 146 Train Loss: 0.072 Train KD_Loss: 0.101 Train Acc: 0.985 Eval Loss: 0.645 Eval Acc: 0.8766
+Epoch: 147 Train Loss: 0.071 Train KD_Loss: 0.101 Train Acc: 0.985 Eval Loss: 0.643 Eval Acc: 0.8787
+Epoch: 148 Train Loss: 0.071 Train KD_Loss: 0.101 Train Acc: 0.985 Eval Loss: 0.641 Eval Acc: 0.8785
+Epoch: 149 Train Loss: 0.069 Train KD_Loss: 0.099 Train Acc: 0.986 Eval Loss: 0.661 Eval Acc: 0.8782
+Epoch: 150 Train Loss: 0.067 Train KD_Loss: 0.097 Train Acc: 0.987 Eval Loss: 0.646 Eval Acc: 0.8778
+Epoch: 151 Train Loss: 0.064 Train KD_Loss: 0.095 Train Acc: 0.989 Eval Loss: 0.648 Eval Acc: 0.8767
+Epoch: 152 Train Loss: 0.063 Train KD_Loss: 0.095 Train Acc: 0.989 Eval Loss: 0.642 Eval Acc: 0.8793
+Epoch: 153 Train Loss: 0.063 Train KD_Loss: 0.095 Train Acc: 0.989 Eval Loss: 0.642 Eval Acc: 0.8785
+Epoch: 154 Train Loss: 0.062 Train KD_Loss: 0.093 Train Acc: 0.990 Eval Loss: 0.642 Eval Acc: 0.8784
+Epoch: 155 Train Loss: 0.062 Train KD_Loss: 0.094 Train Acc: 0.989 Eval Loss: 0.639 Eval Acc: 0.8803
+Epoch: 156 Train Loss: 0.061 Train KD_Loss: 0.094 Train Acc: 0.990 Eval Loss: 0.646 Eval Acc: 0.8788
+Epoch: 157 Train Loss: 0.059 Train KD_Loss: 0.093 Train Acc: 0.991 Eval Loss: 0.646 Eval Acc: 0.8815
+Epoch: 158 Train Loss: 0.059 Train KD_Loss: 0.092 Train Acc: 0.991 Eval Loss: 0.642 Eval Acc: 0.8806
+Epoch: 159 Train Loss: 0.059 Train KD_Loss: 0.092 Train Acc: 0.991 Eval Loss: 0.644 Eval Acc: 0.8790
+Epoch: 160 Train Loss: 0.058 Train KD_Loss: 0.091 Train Acc: 0.991 Eval Loss: 0.649 Eval Acc: 0.8797
+Epoch: 161 Train Loss: 0.059 Train KD_Loss: 0.091 Train Acc: 0.991 Eval Loss: 0.649 Eval Acc: 0.8796
+Epoch: 162 Train Loss: 0.060 Train KD_Loss: 0.092 Train Acc: 0.990 Eval Loss: 0.646 Eval Acc: 0.8775
+Epoch: 163 Train Loss: 0.058 Train KD_Loss: 0.092 Train Acc: 0.992 Eval Loss: 0.647 Eval Acc: 0.8799
+Epoch: 164 Train Loss: 0.059 Train KD_Loss: 0.092 Train Acc: 0.991 Eval Loss: 0.651 Eval Acc: 0.8789
+Epoch: 165 Train Loss: 0.059 Train KD_Loss: 0.092 Train Acc: 0.991 Eval Loss: 0.652 Eval Acc: 0.8789
+Epoch: 166 Train Loss: 0.058 Train KD_Loss: 0.091 Train Acc: 0.991 Eval Loss: 0.649 Eval Acc: 0.8782
+Epoch: 167 Train Loss: 0.058 Train KD_Loss: 0.092 Train Acc: 0.992 Eval Loss: 0.650 Eval Acc: 0.8801
+Epoch: 168 Train Loss: 0.058 Train KD_Loss: 0.092 Train Acc: 0.992 Eval Loss: 0.647 Eval Acc: 0.8807
+Epoch: 169 Train Loss: 0.058 Train KD_Loss: 0.091 Train Acc: 0.991 Eval Loss: 0.648 Eval Acc: 0.8788
+Epoch: 170 Train Loss: 0.058 Train KD_Loss: 0.091 Train Acc: 0.991 Eval Loss: 0.647 Eval Acc: 0.8794
+Epoch: 171 Train Loss: 0.057 Train KD_Loss: 0.090 Train Acc: 0.992 Eval Loss: 0.651 Eval Acc: 0.8794
+Epoch: 172 Train Loss: 0.057 Train KD_Loss: 0.091 Train Acc: 0.992 Eval Loss: 0.650 Eval Acc: 0.8786
+Epoch: 173 Train Loss: 0.056 Train KD_Loss: 0.090 Train Acc: 0.992 Eval Loss: 0.651 Eval Acc: 0.8786
+Epoch: 174 Train Loss: 0.055 Train KD_Loss: 0.090 Train Acc: 0.993 Eval Loss: 0.652 Eval Acc: 0.8796
+Epoch: 175 Train Loss: 0.057 Train KD_Loss: 0.091 Train Acc: 0.991 Eval Loss: 0.648 Eval Acc: 0.8801
+Epoch: 176 Train Loss: 0.057 Train KD_Loss: 0.090 Train Acc: 0.992 Eval Loss: 0.650 Eval Acc: 0.8812
+Epoch: 177 Train Loss: 0.057 Train KD_Loss: 0.089 Train Acc: 0.992 Eval Loss: 0.652 Eval Acc: 0.8801
+Epoch: 178 Train Loss: 0.056 Train KD_Loss: 0.089 Train Acc: 0.992 Eval Loss: 0.650 Eval Acc: 0.8804
+Epoch: 179 Train Loss: 0.057 Train KD_Loss: 0.090 Train Acc: 0.992 Eval Loss: 0.652 Eval Acc: 0.8782
+Epoch: 180 Train Loss: 0.055 Train KD_Loss: 0.090 Train Acc: 0.993 Eval Loss: 0.655 Eval Acc: 0.8785
+Epoch: 181 Train Loss: 0.055 Train KD_Loss: 0.088 Train Acc: 0.993 Eval Loss: 0.652 Eval Acc: 0.8795
+Epoch: 182 Train Loss: 0.055 Train KD_Loss: 0.089 Train Acc: 0.993 Eval Loss: 0.651 Eval Acc: 0.8791
+Epoch: 183 Train Loss: 0.056 Train KD_Loss: 0.089 Train Acc: 0.993 Eval Loss: 0.655 Eval Acc: 0.8787
+Epoch: 184 Train Loss: 0.055 Train KD_Loss: 0.089 Train Acc: 0.993 Eval Loss: 0.653 Eval Acc: 0.8795
+Epoch: 185 Train Loss: 0.056 Train KD_Loss: 0.089 Train Acc: 0.992 Eval Loss: 0.653 Eval Acc: 0.8797
+Epoch: 186 Train Loss: 0.055 Train KD_Loss: 0.089 Train Acc: 0.992 Eval Loss: 0.650 Eval Acc: 0.8792
+Epoch: 187 Train Loss: 0.056 Train KD_Loss: 0.089 Train Acc: 0.992 Eval Loss: 0.652 Eval Acc: 0.8794
+Epoch: 188 Train Loss: 0.055 Train KD_Loss: 0.089 Train Acc: 0.993 Eval Loss: 0.653 Eval Acc: 0.8788
+Epoch: 189 Train Loss: 0.054 Train KD_Loss: 0.088 Train Acc: 0.994 Eval Loss: 0.651 Eval Acc: 0.8795
+Epoch: 190 Train Loss: 0.054 Train KD_Loss: 0.088 Train Acc: 0.993 Eval Loss: 0.652 Eval Acc: 0.8796
+Epoch: 191 Train Loss: 0.055 Train KD_Loss: 0.089 Train Acc: 0.993 Eval Loss: 0.650 Eval Acc: 0.8797
+Epoch: 192 Train Loss: 0.055 Train KD_Loss: 0.088 Train Acc: 0.993 Eval Loss: 0.653 Eval Acc: 0.8789
+Epoch: 193 Train Loss: 0.055 Train KD_Loss: 0.088 Train Acc: 0.993 Eval Loss: 0.655 Eval Acc: 0.8791
+Epoch: 194 Train Loss: 0.055 Train KD_Loss: 0.088 Train Acc: 0.993 Eval Loss: 0.651 Eval Acc: 0.8784
+Epoch: 195 Train Loss: 0.055 Train KD_Loss: 0.089 Train Acc: 0.993 Eval Loss: 0.653 Eval Acc: 0.8794
+Epoch: 196 Train Loss: 0.054 Train KD_Loss: 0.087 Train Acc: 0.993 Eval Loss: 0.658 Eval Acc: 0.8792
+Epoch: 197 Train Loss: 0.054 Train KD_Loss: 0.088 Train Acc: 0.993 Eval Loss: 0.653 Eval Acc: 0.8801
+Epoch: 198 Train Loss: 0.053 Train KD_Loss: 0.087 Train Acc: 0.993 Eval Loss: 0.651 Eval Acc: 0.8795
+Epoch: 199 Train Loss: 0.054 Train KD_Loss: 0.089 Train Acc: 0.993 Eval Loss: 0.654 Eval Acc: 0.8796
+Student best accuracy: tensor(0.8815, device='cuda:0')

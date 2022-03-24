@@ -94,11 +94,16 @@ def train_kd(model, teacher, alpha, temperature, train_loader, test_loader, devi
     num_epochs = 200
 
     criterion = nn.CrossEntropyLoss()
-    kd_criterion = nn.KLDivLoss(reduction='batchmean')
+    kd_criterion = nn.KLDivLoss()
     T = temperature
+    best_acc = 0
 
     model.to(device)
-    teacher.eval()
+    if teacher:
+        teacher.to(device)
+        teacher.eval()
+    else:
+        alpha = 0
 
     # It seems that SGD optimizer is better than Adam optimizer for ResNet18 training on CIFAR10.
     optimizer = optim.SGD(model.parameters(), lr=learning_rate, momentum=0.9, weight_decay=1e-4)
@@ -113,6 +118,7 @@ def train_kd(model, teacher, alpha, temperature, train_loader, test_loader, devi
 
         running_loss = 0
         running_corrects = 0
+        running_kd_loss = 0
 
         for inputs, labels in train_loader:
 
@@ -124,10 +130,16 @@ def train_kd(model, teacher, alpha, temperature, train_loader, test_loader, devi
 
             # forward + backward + optimize
             outputs = model(inputs)
-            t_outputs = teacher(inputs)
             _, preds = torch.max(outputs, 1)
             s_loss = criterion(outputs, labels)
-            kd_loss = T * T * kd_criterion(nn.log_softmax(outputs/T), nn.softmax(t_outpus/T))
+            
+            if teacher:
+                t_outputs = teacher(inputs)
+                kd_loss = T * T * kd_criterion(nn.functional.log_softmax(outputs/T, dim=1), nn.functional.softmax(t_outputs/T, dim=1))
+            else:
+                kd_loss = torch.tensor([0]).to(device)
+            
+            
             loss = (1-alpha) * s_loss + alpha * kd_loss
 
             loss.backward()
@@ -145,6 +157,7 @@ def train_kd(model, teacher, alpha, temperature, train_loader, test_loader, devi
         # Evaluation
         model.eval()
         eval_loss, eval_accuracy = evaluate_model(model=model, test_loader=test_loader, device=device, criterion=criterion)
+        best_acc = max(best_acc, eval_accuracy)
         
         scheduler.step()
         
@@ -153,9 +166,9 @@ def train_kd(model, teacher, alpha, temperature, train_loader, test_loader, devi
         writer.add_scalar('Accuracy/train', train_accuracy, epoch)
         writer.add_scalar('Accuracy/test', eval_accuracy, epoch)
 
-        print("Epoch: {:02d} Train Loss: {:.3f} Train KD_Loss: {:.3f} Train Acc: {:.3f} Eval Loss: {:.3f} Eval Acc: {:.3f}".format(epoch, train_kd_loss, train_loss, train_accuracy, eval_loss, eval_accuracy))
+        print("Epoch: {:02d} Train Loss: {:.3f} Train KD_Loss: {:.3f} Train Acc: {:.3f} Eval Loss: {:.3f} Eval Acc: {:.4f}".format(epoch, train_loss, train_kd_loss, train_accuracy, eval_loss, eval_accuracy))
 
-    return model
+    return model, best_acc
 
 def save_model(model, model_dir, model_filename):
 
@@ -191,8 +204,8 @@ def create_model(model_arch, num_classes=10):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('-t', type=str, required=True,default='res18')
-    parser.add_argument('-s', type=str, required=True,default='res18')
+    parser.add_argument('-t', type=str, default='None')
+    parser.add_argument('-s', type=str, required=True, default='res18')
     parser.add_argument('--alpha', type=float, default=0.5)
     parser.add_argument('--temperature', type=float, default=4.0)
     args = parser.parse_args()
@@ -203,10 +216,10 @@ def main():
     cpu_device = torch.device("cpu:0")
 
     teacher_arch = args.t
-    student_arch = args.t
+    student_arch = args.s
     model_dir = "saved_models"
     teacher_filename = teacher_arch + "_cifar10.pt"
-    student_filename = studnet_arch + "_kd_cifar10.pt"
+    student_filename = student_arch + "_kd_" + teacher_arch + "_cifar10.pt"
 
     teacher_filepath = os.path.join(model_dir, teacher_filename)
     student_filepath = os.path.join(model_dir, student_filename)
@@ -214,7 +227,12 @@ def main():
     set_random_seeds(random_seed=random_seed)
 
     # Create an untrained model.
-    teacher = create_model(teacher_arch, num_classes=num_classes)
+    if teacher_arch != 'None':
+        teacher = create_model(teacher_arch, num_classes=num_classes)
+        teacher = load_model(model=teacher, model_filepath=teacher_filepath, device=cuda_device)
+    else:
+        teacher = None
+        
     student = create_model(student_arch, num_classes=num_classes)
     print(teacher)
     print(student)
@@ -222,7 +240,7 @@ def main():
     train_loader, test_loader = prepare_dataloader(num_workers=8, train_batch_size=128, eval_batch_size=256)
 
     # Load a pretrained model.
-    teacher = load_model(model=teacher, model_filepath=teacher_filepath, device=cuda_device)
+    
     student,best_accuracy = train_kd(model=student, teacher=teacher, alpha=args.alpha, temperature=args.temperature, train_loader=train_loader, test_loader=test_loader, device=cuda_device)
 
     save_model(model=student, model_dir=model_dir, model_filename=student_filename)    
