@@ -1,0 +1,7 @@
+[
+{
+  "directory": "C:/Users/Kai/Documents/K.J/Year IV/Final Year Project/FYP/android/ncnn-android-resnet/app/.cxx/cmake/debug/x86_64",
+  "command": "C:\\Users\\Kai\\AppData\\Local\\Android\\Sdk\\ndk\\24.0.8215888\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=x86_64-none-linux-android24 --sysroot=C:/Users/Kai/AppData/Local/Android/Sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dresnetncnn_EXPORTS -isystem \"C:/Users/Kai/Documents/K.J/Year IV/Final Year Project/FYP/android/ncnn-android-resnet/app/src/main/jni/ncnn-20220216-android-vulkan/x86_64/include/ncnn\"  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC   -fno-rtti -fno-exceptions -o CMakeFiles\\resnetncnn.dir\\res18_kd_ncnn_jni.cpp.o -c \"C:\\Users\\Kai\\Documents\\K.J\\Year IV\\Final Year Project\\FYP\\android\\ncnn-android-resnet\\app\\src\\main\\jni\\res18_kd_ncnn_jni.cpp\"",
+  "file": "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\Final Year Project\\FYP\\android\\ncnn-android-resnet\\app\\src\\main\\jni\\res18_kd_ncnn_jni.cpp"
+}
+]

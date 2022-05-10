@@ -1,0 +1,64 @@
+{
+  "stringTable": {
+    "0": "C:/Users/Kai/Documents/K.J/Year IV/Final Year Project/FYP/android/ncnn-android-resnet/app/.cxx/cmake/debug/x86",
+    "1": "--target=i686-none-linux-android24 --sysroot=C:/Users/Kai/AppData/Local/Android/Sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dresnetncnn_EXPORTS -isystem C:/Users/Kai/Documents/K.J/Year IV/Final Year Project/FYP/android/ncnn-android-resnet/app/src/main/jni/ncnn-20220216-android-vulkan/x86/include/ncnn -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fno-limit-debug-info -fPIC -fno-rtti -fno-exceptions"
+  },
+  "buildFiles": [
+    "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\Final Year Project\\FYP\\android\\ncnn-android-resnet\\app\\src\\main\\jni\\ncnn-20220216-android-vulkan\\x86\\lib\\cmake\\ncnn\\ncnnConfig.cmake",
+    "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\Final Year Project\\FYP\\android\\ncnn-android-resnet\\app\\src\\main\\jni\\ncnn-20220216-android-vulkan\\x86\\lib\\cmake\\OSDependentTargets-release.cmake",
+    "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\Final Year Project\\FYP\\android\\ncnn-android-resnet\\app\\src\\main\\jni\\ncnn-20220216-android-vulkan\\x86\\lib\\cmake\\glslangTargets-release.cmake",
+    "C:\\Users\\Kai\\AppData\\Local\\Android\\Sdk\\ndk\\24.0.8215888\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\Final Year Project\\FYP\\android\\ncnn-android-resnet\\app\\src\\main\\jni\\CMakeLists.txt",
+    "C:\\Users\\Kai\\AppData\\Local\\Android\\Sdk\\ndk\\24.0.8215888\\build\\cmake\\android-legacy.toolchain.cmake",
+    "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\Final Year Project\\FYP\\android\\ncnn-android-resnet\\app\\src\\main\\jni\\ncnn-20220216-android-vulkan\\x86\\lib\\cmake\\SPIRVTargets-release.cmake",
+    "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\Final Year Project\\FYP\\android\\ncnn-android-resnet\\app\\src\\main\\jni\\ncnn-20220216-android-vulkan\\x86\\lib\\cmake\\ncnn\\ncnn-release.cmake",
+    "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\Final Year Project\\FYP\\android\\ncnn-android-resnet\\app\\src\\main\\jni\\ncnn-20220216-android-vulkan\\x86\\lib\\cmake\\glslangTargets.cmake",
+    "C:\\Users\\Kai\\AppData\\Local\\Android\\Sdk\\ndk\\24.0.8215888\\build\\cmake\\platforms.cmake",
+    "C:\\Users\\Kai\\AppData\\Local\\Android\\Sdk\\ndk\\24.0.8215888\\build\\cmake\\compiler_id.cmake",
+    "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\Final Year Project\\FYP\\android\\ncnn-android-resnet\\app\\src\\main\\jni\\ncnn-20220216-android-vulkan\\x86\\lib\\cmake\\OSDependentTargets.cmake",
+    "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\Final Year Project\\FYP\\android\\ncnn-android-resnet\\app\\src\\main\\jni\\ncnn-20220216-android-vulkan\\x86\\lib\\cmake\\OGLCompilerTargets-release.cmake",
+    "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\Final Year Project\\FYP\\android\\ncnn-android-resnet\\app\\src\\main\\jni\\ncnn-20220216-android-vulkan\\x86\\lib\\cmake\\OGLCompilerTargets.cmake",
+    "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\Final Year Project\\FYP\\android\\ncnn-android-resnet\\app\\src\\main\\jni\\ncnn-20220216-android-vulkan\\x86\\lib\\cmake\\SPIRVTargets.cmake",
+    "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\Final Year Project\\FYP\\android\\ncnn-android-resnet\\app\\src\\main\\jni\\ncnn-20220216-android-vulkan\\x86\\lib\\cmake\\ncnn\\ncnn.cmake"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\Kai\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\Kai\\Documents\\K.J\\Year IV\\Final Year Project\\FYP\\android\\ncnn-android-resnet\\app\\.cxx\\cmake\\debug\\x86\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\Kai\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\Kai\\Documents\\K.J\\Year IV\\Final Year Project\\FYP\\android\\ncnn-android-resnet\\app\\.cxx\\cmake\\debug\\x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "resnetncnn-Debug-x86": {
+      "buildCommand": "C:\\Users\\Kai\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\Kai\\Documents\\K.J\\Year IV\\Final Year Project\\FYP\\android\\ncnn-android-resnet\\app\\.cxx\\cmake\\debug\\x86\" resnetncnn",
+      "buildType": "debug",
+      "toolchain": "1978863631",
+      "abi": "x86",
+      "artifactName": "resnetncnn",
+      "files": [
+        {
+          "src": "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\Final Year Project\\FYP\\android\\ncnn-android-resnet\\app\\src\\main\\jni\\res18_kd_ncnn_jni.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\Final Year Project\\FYP\\android\\ncnn-android-resnet\\app\\build\\intermediates\\cmake\\debug\\obj\\x86\\libresnetncnn.so",
+      "runtimeFiles": [
+        "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\Final Year Project\\FYP\\android\\ncnn-android-resnet\\app\\src\\main\\jni\\ncnn-20220216-android-vulkan\\x86\\lib\\libncnn.a",
+        "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\Final Year Project\\FYP\\android\\ncnn-android-resnet\\app\\src\\main\\jni\\ncnn-20220216-android-vulkan\\x86\\lib\\libglslang.a",
+        "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\Final Year Project\\FYP\\android\\ncnn-android-resnet\\app\\src\\main\\jni\\ncnn-20220216-android-vulkan\\x86\\lib\\libSPIRV.a",
+        "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\Final Year Project\\FYP\\android\\ncnn-android-resnet\\app\\src\\main\\jni\\ncnn-20220216-android-vulkan\\x86\\lib\\libMachineIndependent.a",
+        "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\Final Year Project\\FYP\\android\\ncnn-android-resnet\\app\\src\\main\\jni\\ncnn-20220216-android-vulkan\\x86\\lib\\libOGLCompiler.a",
+        "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\Final Year Project\\FYP\\android\\ncnn-android-resnet\\app\\src\\main\\jni\\ncnn-20220216-android-vulkan\\x86\\lib\\libOSDependent.a",
+        "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\Final Year Project\\FYP\\android\\ncnn-android-resnet\\app\\src\\main\\jni\\ncnn-20220216-android-vulkan\\x86\\lib\\libGenericCodeGen.a"
+      ]
+    }
+  },
+  "toolchains": {
+    "1978863631": {
+      "cppCompilerExecutable": "C:\\Users\\Kai\\AppData\\Local\\Android\\Sdk\\ndk\\24.0.8215888\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

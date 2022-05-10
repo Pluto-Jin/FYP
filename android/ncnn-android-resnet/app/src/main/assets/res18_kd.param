@@ -1,0 +1,80 @@
+7767517
+78 86
+Input            input.1                  0 1 input.1
+Convolution      Conv_0                   1 1 input.1 123 0=64 1=7 11=7 2=1 12=1 3=2 13=2 4=3 14=3 15=3 16=3 5=0 6=9408
+BatchNorm        BatchNormalization_1     1 1 123 124 0=64
+ReLU             Relu_2                   1 1 124 125
+Pooling          MaxPool_3                1 1 125 126 0=0 1=3 11=3 2=2 12=2 3=1 13=1 14=1 15=1 5=1
+Split            splitncnn_0              1 2 126 126_splitncnn_0 126_splitncnn_1
+Convolution      Conv_4                   1 1 126_splitncnn_1 127 0=64 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=0 6=36864
+BatchNorm        BatchNormalization_5     1 1 127 128 0=64
+ReLU             Relu_6                   1 1 128 129
+Convolution      Conv_7                   1 1 129 130 0=64 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=0 6=36864
+BatchNorm        BatchNormalization_8     1 1 130 131 0=64
+BinaryOp         Add_9                    2 1 126_splitncnn_0 131 132 0=0
+ReLU             Relu_10                  1 1 132 133
+Split            splitncnn_1              1 2 133 133_splitncnn_0 133_splitncnn_1
+Convolution      Conv_11                  1 1 133_splitncnn_1 134 0=64 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=0 6=36864
+BatchNorm        BatchNormalization_12    1 1 134 135 0=64
+ReLU             Relu_13                  1 1 135 136
+Convolution      Conv_14                  1 1 136 137 0=64 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=0 6=36864
+BatchNorm        BatchNormalization_15    1 1 137 138 0=64
+BinaryOp         Add_16                   2 1 133_splitncnn_0 138 139 0=0
+ReLU             Relu_17                  1 1 139 140
+Split            splitncnn_2              1 2 140 140_splitncnn_0 140_splitncnn_1
+Convolution      Conv_18                  1 1 140_splitncnn_1 141 0=128 1=3 11=3 2=1 12=1 3=2 13=2 4=1 14=1 15=1 16=1 5=0 6=73728
+BatchNorm        BatchNormalization_19    1 1 141 142 0=128
+ReLU             Relu_20                  1 1 142 143
+Convolution      Conv_21                  1 1 143 144 0=128 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=0 6=147456
+BatchNorm        BatchNormalization_22    1 1 144 145 0=128
+Convolution      Conv_23                  1 1 140_splitncnn_0 146 0=128 1=1 11=1 2=1 12=1 3=2 13=2 4=0 14=0 15=0 16=0 5=0 6=8192
+BatchNorm        BatchNormalization_24    1 1 146 147 0=128
+BinaryOp         Add_25                   2 1 147 145 148 0=0
+ReLU             Relu_26                  1 1 148 149
+Split            splitncnn_3              1 2 149 149_splitncnn_0 149_splitncnn_1
+Convolution      Conv_27                  1 1 149_splitncnn_1 150 0=128 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=0 6=147456
+BatchNorm        BatchNormalization_28    1 1 150 151 0=128
+ReLU             Relu_29                  1 1 151 152
+Convolution      Conv_30                  1 1 152 153 0=128 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=0 6=147456
+BatchNorm        BatchNormalization_31    1 1 153 154 0=128
+BinaryOp         Add_32                   2 1 149_splitncnn_0 154 155 0=0
+ReLU             Relu_33                  1 1 155 156
+Split            splitncnn_4              1 2 156 156_splitncnn_0 156_splitncnn_1
+Convolution      Conv_34                  1 1 156_splitncnn_1 157 0=256 1=3 11=3 2=1 12=1 3=2 13=2 4=1 14=1 15=1 16=1 5=0 6=294912
+BatchNorm        BatchNormalization_35    1 1 157 158 0=256
+ReLU             Relu_36                  1 1 158 159
+Convolution      Conv_37                  1 1 159 160 0=256 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=0 6=589824
+BatchNorm        BatchNormalization_38    1 1 160 161 0=256
+Convolution      Conv_39                  1 1 156_splitncnn_0 162 0=256 1=1 11=1 2=1 12=1 3=2 13=2 4=0 14=0 15=0 16=0 5=0 6=32768
+BatchNorm        BatchNormalization_40    1 1 162 163 0=256
+BinaryOp         Add_41                   2 1 163 161 164 0=0
+ReLU             Relu_42                  1 1 164 165
+Split            splitncnn_5              1 2 165 165_splitncnn_0 165_splitncnn_1
+Convolution      Conv_43                  1 1 165_splitncnn_1 166 0=256 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=0 6=589824
+BatchNorm        BatchNormalization_44    1 1 166 167 0=256
+ReLU             Relu_45                  1 1 167 168
+Convolution      Conv_46                  1 1 168 169 0=256 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=0 6=589824
+BatchNorm        BatchNormalization_47    1 1 169 170 0=256
+BinaryOp         Add_48                   2 1 165_splitncnn_0 170 171 0=0
+ReLU             Relu_49                  1 1 171 172
+Split            splitncnn_6              1 2 172 172_splitncnn_0 172_splitncnn_1
+Convolution      Conv_50                  1 1 172_splitncnn_1 173 0=512 1=3 11=3 2=1 12=1 3=2 13=2 4=1 14=1 15=1 16=1 5=0 6=1179648
+BatchNorm        BatchNormalization_51    1 1 173 174 0=512
+ReLU             Relu_52                  1 1 174 175
+Convolution      Conv_53                  1 1 175 176 0=512 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=0 6=2359296
+BatchNorm        BatchNormalization_54    1 1 176 177 0=512
+Convolution      Conv_55                  1 1 172_splitncnn_0 178 0=512 1=1 11=1 2=1 12=1 3=2 13=2 4=0 14=0 15=0 16=0 5=0 6=131072
+BatchNorm        BatchNormalization_56    1 1 178 179 0=512
+BinaryOp         Add_57                   2 1 179 177 180 0=0
+ReLU             Relu_58                  1 1 180 181
+Split            splitncnn_7              1 2 181 181_splitncnn_0 181_splitncnn_1
+Convolution      Conv_59                  1 1 181_splitncnn_1 182 0=512 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=0 6=2359296
+BatchNorm        BatchNormalization_60    1 1 182 183 0=512
+ReLU             Relu_61                  1 1 183 184
+Convolution      Conv_62                  1 1 184 185 0=512 1=3 11=3 2=1 12=1 3=1 13=1 4=1 14=1 15=1 16=1 5=0 6=2359296
+BatchNorm        BatchNormalization_63    1 1 185 186 0=512
+BinaryOp         Add_64                   2 1 181_splitncnn_0 186 187 0=0
+ReLU             Relu_65                  1 1 187 188
+Pooling          GlobalAveragePool_66     1 1 188 189 0=1 4=1
+Flatten          Flatten_67               1 1 189 190
+InnerProduct     Gemm_68                  1 1 190 191 0=10 1=1 2=5120

@@ -1,0 +1,55 @@
+{
+  "stringTable": {
+    "0": "C:/Users/Kai/Documents/K.J/Year IV/FYP/FYP/android/ncnn-android-squeezenet/app/.cxx/cmake/release/x86",
+    "1": "--target=i686-none-linux-android24 --sysroot=C:/Users/Kai/AppData/Local/Android/Sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dsqueezencnn_EXPORTS -isystem C:/Users/Kai/Documents/K.J/Year IV/FYP/FYP/android/ncnn-android-squeezenet/app/src/main/jni/ncnn-20220216-android-vulkan/x86/include/ncnn -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -DNDEBUG -fPIC -fno-rtti -fno-exceptions"
+  },
+  "buildFiles": [
+    "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\FYP\\FYP\\android\\ncnn-android-squeezenet\\app\\src\\main\\jni\\ncnn-20220216-android-vulkan\\x86\\lib\\cmake\\ncnn\\ncnnConfig.cmake",
+    "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\FYP\\FYP\\android\\ncnn-android-squeezenet\\app\\src\\main\\jni\\ncnn-20220216-android-vulkan\\x86\\lib\\cmake\\OSDependentTargets-release.cmake",
+    "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\FYP\\FYP\\android\\ncnn-android-squeezenet\\app\\src\\main\\jni\\ncnn-20220216-android-vulkan\\x86\\lib\\cmake\\glslangTargets-release.cmake",
+    "C:\\Users\\Kai\\AppData\\Local\\Android\\Sdk\\ndk\\24.0.8215888\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\FYP\\FYP\\android\\ncnn-android-squeezenet\\app\\src\\main\\jni\\CMakeLists.txt",
+    "C:\\Users\\Kai\\AppData\\Local\\Android\\Sdk\\ndk\\24.0.8215888\\build\\cmake\\android-legacy.toolchain.cmake",
+    "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\FYP\\FYP\\android\\ncnn-android-squeezenet\\app\\src\\main\\jni\\ncnn-20220216-android-vulkan\\x86\\lib\\cmake\\SPIRVTargets-release.cmake",
+    "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\FYP\\FYP\\android\\ncnn-android-squeezenet\\app\\src\\main\\jni\\ncnn-20220216-android-vulkan\\x86\\lib\\cmake\\ncnn\\ncnn-release.cmake",
+    "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\FYP\\FYP\\android\\ncnn-android-squeezenet\\app\\src\\main\\jni\\ncnn-20220216-android-vulkan\\x86\\lib\\cmake\\glslangTargets.cmake",
+    "C:\\Users\\Kai\\AppData\\Local\\Android\\Sdk\\ndk\\24.0.8215888\\build\\cmake\\platforms.cmake",
+    "C:\\Users\\Kai\\AppData\\Local\\Android\\Sdk\\ndk\\24.0.8215888\\build\\cmake\\compiler_id.cmake",
+    "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\FYP\\FYP\\android\\ncnn-android-squeezenet\\app\\src\\main\\jni\\ncnn-20220216-android-vulkan\\x86\\lib\\cmake\\OSDependentTargets.cmake",
+    "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\FYP\\FYP\\android\\ncnn-android-squeezenet\\app\\src\\main\\jni\\ncnn-20220216-android-vulkan\\x86\\lib\\cmake\\OGLCompilerTargets-release.cmake",
+    "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\FYP\\FYP\\android\\ncnn-android-squeezenet\\app\\src\\main\\jni\\ncnn-20220216-android-vulkan\\x86\\lib\\cmake\\OGLCompilerTargets.cmake",
+    "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\FYP\\FYP\\android\\ncnn-android-squeezenet\\app\\src\\main\\jni\\ncnn-20220216-android-vulkan\\x86\\lib\\cmake\\SPIRVTargets.cmake",
+    "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\FYP\\FYP\\android\\ncnn-android-squeezenet\\app\\src\\main\\jni\\ncnn-20220216-android-vulkan\\x86\\lib\\cmake\\ncnn\\ncnn.cmake"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\Kai\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\Kai\\Documents\\K.J\\Year IV\\FYP\\FYP\\android\\ncnn-android-squeezenet\\app\\.cxx\\cmake\\release\\x86\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\Kai\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\Kai\\Documents\\K.J\\Year IV\\FYP\\FYP\\android\\ncnn-android-squeezenet\\app\\.cxx\\cmake\\release\\x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "squeezencnn-Release-x86": {
+      "buildCommand": "C:\\Users\\Kai\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\Kai\\Documents\\K.J\\Year IV\\FYP\\FYP\\android\\ncnn-android-squeezenet\\app\\.cxx\\cmake\\release\\x86\" squeezencnn",
+      "buildType": "release",
+      "toolchain": "1978863631",
+      "abi": "x86",
+      "artifactName": "squeezencnn",
+      "files": [
+        {
+          "src": "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\FYP\\FYP\\android\\ncnn-android-squeezenet\\app\\src\\main\\jni\\squeezencnn_jni.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "C:\\Users\\Kai\\Documents\\K.J\\Year IV\\FYP\\FYP\\android\\ncnn-android-squeezenet\\app\\build\\intermediates\\cmake\\release\\obj\\x86\\libsqueezencnn.so"
+    }
+  },
+  "toolchains": {
+    "1978863631": {
+      "cppCompilerExecutable": "C:\\Users\\Kai\\AppData\\Local\\Android\\Sdk\\ndk\\24.0.8215888\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

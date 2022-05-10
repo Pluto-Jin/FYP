@@ -1,0 +1,3 @@
+C:/Users/Kai/Documents/K.J/Year IV/Final Year Project/FYP/android/ncnn-android-resnet/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/resnetncnn.dir
+C:/Users/Kai/Documents/K.J/Year IV/Final Year Project/FYP/android/ncnn-android-resnet/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/Kai/Documents/K.J/Year IV/Final Year Project/FYP/android/ncnn-android-resnet/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/rebuild_cache.dir

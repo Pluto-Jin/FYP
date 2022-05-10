@@ -1,0 +1,2 @@
+ninja: Entering directory `C:\Users\Kai\Documents\K.J\Year IV\Final Year Project\FYP\android\ncnn-android-resnet\app\.cxx\cmake\debug\x86'
+ninja: no work to do.
